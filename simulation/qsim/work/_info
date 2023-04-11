@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\douge\Desktop\UEFS\SEMESTRE_3\MI_Circuitos_Digitais\Problema_2\Letreiro\simulation\qsim
+vLetreiro
+Z1 IGX`am[W`eCKn=d18hfG`:2
+Z2 VoaNb^OJzfdHjNg26K?K0i3
+Z3 dC:\Users\douge\Desktop\UEFS\SEMESTRE_3\MI_Circuitos_Digitais\Problema_2\Letreiro\simulation\qsim
+Z4 w1681162029
+Z5 8Letreiro.vo
+Z6 FLetreiro.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Letreiro.vo|
+Z9 o-work work -O0
+Z10 n@letreiro
+!i10b 1
+Z11 !s100 T;_;=[PAgl8YlNFcO0]<[0
+!s85 0
+Z12 !s108 1681162030.780000
+Z13 !s107 Letreiro.vo|
+!s101 -O0
+vLetreiro_vlg_check_tst
+!i10b 1
+!s100 eCaIChPJSW5o`ZFUm`YZN0
+IEjX3chREjjeGa7Jc1bc>^1
+Z14 V:6ej0@m1I]Y3KRVNOzD]R1
+R3
+Z15 w1681162026
+Z16 8Waveform3.vwf.vt
+Z17 FWaveform3.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z18 !s108 1681162030.949000
+Z19 !s107 Waveform3.vwf.vt|
+Z20 !s90 -work|work|Waveform3.vwf.vt|
+!s101 -O0
+R9
+Z21 n@letreiro_vlg_check_tst
+vLetreiro_vlg_sample_tst
+!i10b 1
+!s100 ZLXKWc:UW3b8n8n:bz5?03
+IQ_30V7VBD9j9[=;92dUkY2
+Z22 VN9GXjTm^Ub@1fKPoJkVdN2
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z23 n@letreiro_vlg_sample_tst
+vLetreiro_vlg_vec_tst
+!i10b 1
+!s100 locBam8<:0AfH<ag@7HRf3
+I61J6;QOZAVBE7`K7QF`;C0
+Z24 VoII6kIabE7gg7j3L2`Xb]0
+R3
+R15
+R16
+R17
+Z25 L0 318
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z26 n@letreiro_vlg_vec_tst

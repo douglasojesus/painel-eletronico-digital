@@ -1,0 +1,1184 @@
+|Letreiro
+CLK => CLK.IN3
+ch0 => ch0.IN3
+ch1 => ch1.IN3
+C1L1 <= RegistradorL1:instL1.port3
+C2L1 <= RegistradorL1:instL1.port4
+C3L1 <= RegistradorL1:instL1.port5
+C4L1 <= RegistradorL1:instL1.port6
+C5L1 <= RegistradorL1:instL1.port7
+C6L1 <= RegistradorL1:instL1.port8
+C7L1 <= RegistradorL1:instL1.port9
+C1L2 <= RegistradorL2:instL2.port3
+C2L2 <= RegistradorL2:instL2.port4
+C3L2 <= RegistradorL2:instL2.port5
+C4L2 <= RegistradorL2:instL2.port6
+C5L2 <= RegistradorL2:instL2.port7
+C6L2 <= RegistradorL2:instL2.port8
+C7L2 <= RegistradorL2:instL2.port9
+C1L3 <= RegistradorL3:instL3.port3
+C2L3 <= RegistradorL3:instL3.port4
+C3L3 <= RegistradorL3:instL3.port5
+C4L3 <= RegistradorL3:instL3.port6
+C5L3 <= RegistradorL3:instL3.port7
+C6L3 <= RegistradorL3:instL3.port8
+C7L3 <= RegistradorL3:instL3.port9
+C1L4 <= <GND>
+C2L4 <= <GND>
+C3L4 <= <GND>
+C4L4 <= <GND>
+C5L4 <= <GND>
+C6L4 <= <GND>
+C7L4 <= <GND>
+C1L5 <= <GND>
+C2L5 <= <GND>
+C3L5 <= <GND>
+C4L5 <= <GND>
+C5L5 <= <GND>
+C6L5 <= <GND>
+C7L5 <= <GND>
+
+
+|Letreiro|RegistradorL1:instL1
+ch0 => ch0.IN16
+ch1 => ch1.IN16
+CLK => CLK.IN16
+saida1 <= saida1.DB_MAX_OUTPUT_PORT_TYPE
+saida2 <= saida2.DB_MAX_OUTPUT_PORT_TYPE
+saida3 <= saida3.DB_MAX_OUTPUT_PORT_TYPE
+saida4 <= saida4.DB_MAX_OUTPUT_PORT_TYPE
+saida5 <= saida5.DB_MAX_OUTPUT_PORT_TYPE
+saida6 <= saida6.DB_MAX_OUTPUT_PORT_TYPE
+saida7 <= saida7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst1
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst1|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst2
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst2|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst3
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst3|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst4
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst4|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst5
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst5|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst6
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst6|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst7
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst7|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst8
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst8|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst9
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst9|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst10
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst10|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst11
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst11|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst12
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst12|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst13
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst13|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst14
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst14|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst15
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst15|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst16
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL1:instL1|FlipflopD:inst16|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2
+ch0 => ch0.IN16
+ch1 => ch1.IN16
+CLK => CLK.IN16
+saida1 <= saida1.DB_MAX_OUTPUT_PORT_TYPE
+saida2 <= saida2.DB_MAX_OUTPUT_PORT_TYPE
+saida3 <= saida3.DB_MAX_OUTPUT_PORT_TYPE
+saida4 <= saida4.DB_MAX_OUTPUT_PORT_TYPE
+saida5 <= saida5.DB_MAX_OUTPUT_PORT_TYPE
+saida6 <= saida6.DB_MAX_OUTPUT_PORT_TYPE
+saida7 <= saida7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst1
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst1|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst2
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst2|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst3
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst3|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst4
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst4|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst5
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst5|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst6
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst6|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst7
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst7|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst8
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst8|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst9
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst9|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst10
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst10|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst11
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst11|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst12
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst12|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst13
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst13|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst14
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst14|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst15
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst15|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst16
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL2:instL2|FlipflopD:inst16|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3
+ch0 => ch0.IN16
+ch1 => ch1.IN16
+CLK => CLK.IN16
+saida1 <= saida1.DB_MAX_OUTPUT_PORT_TYPE
+saida2 <= saida2.DB_MAX_OUTPUT_PORT_TYPE
+saida3 <= saida3.DB_MAX_OUTPUT_PORT_TYPE
+saida4 <= saida4.DB_MAX_OUTPUT_PORT_TYPE
+saida5 <= saida5.DB_MAX_OUTPUT_PORT_TYPE
+saida6 <= saida6.DB_MAX_OUTPUT_PORT_TYPE
+saida7 <= saida7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst1
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst1|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst2
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst2|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst3
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst3|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst4
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst4|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst5
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst5|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst6
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst6|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst7
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst7|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst8
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst8|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst9
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst9|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst10
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst10|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst11
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst11|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst12
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst12|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst13
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst13|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst14
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst14|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst15
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst15|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst16
+ch0 => ch0.IN1
+ch1 => ch1.IN1
+para_exibicao => para_exibicao.IN1
+dir_esq => dir_esq.IN1
+esq_dir => esq_dir.IN1
+CLK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|RegistradorL3:instL3|FlipflopD:inst16|multiplexador:mux
+ch0 => WideAnd1.IN0
+ch0 => WideAnd0.IN0
+ch0 => WideAnd2.IN0
+ch1 => WideAnd2.IN1
+ch1 => WideAnd0.IN1
+ch1 => WideAnd1.IN1
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+para_exibicao => WideAnd0.IN2
+dir_esq => WideAnd1.IN2
+esq_dir => WideAnd2.IN2
+
+

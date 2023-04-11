@@ -1,0 +1,150 @@
+$comment
+	File created using the following command:
+		vcd file Letreiro.msim.vcd -direction
+$end
+$date
+	Mon Apr 10 18:27:11 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Letreiro_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 1 " ch0 $end
+$var reg 1 # ch1 $end
+$var wire 1 $ saida1 $end
+$var wire 1 % saida2 $end
+$var wire 1 & saida3 $end
+$var wire 1 ' saida4 $end
+$var wire 1 ( saida5 $end
+$var wire 1 ) saida6 $end
+$var wire 1 * saida7 $end
+$var wire 1 + sampler $end
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+x+
+0,
+1-
+x.
+1/
+10
+11
+$end
+#5000
+1!
+0+
+#10000
+1"
+0!
+1+
+#15000
+1!
+0+
+#20000
+0!
+1+
+#25000
+1!
+0+
+#30000
+0!
+1+
+#35000
+1!
+0+
+#40000
+0!
+1+
+#45000
+1!
+0+
+#50000
+0!
+1+
+#55000
+1!
+0+
+#60000
+0!
+1+
+#65000
+1!
+0+
+#70000
+0!
+1+
+#75000
+1!
+0+
+#80000
+0!
+1+
+#85000
+1!
+0+
+#90000
+0!
+1+
+#95000
+1!
+0+
+#100000
+0!
+1+
+#105000
+1!
+0+
+#110000
+0!
+1+
+#115000
+1!
+0+
+#120000
+0!
+1+
+#125000
+1!
+0+
+#130000
+0!
+1+
+#135000
+1!
+0+
+#140000
+0!
+1+
+#145000
+1!
+0+
+#150000
+0!
+1+
+#155000
+1!
+0+
+#160000
