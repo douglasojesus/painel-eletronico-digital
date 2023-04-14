@@ -66,3 +66,5 @@ set_global_assignment -name VERILOG_FILE multiplexador.v
 set_global_assignment -name VERILOG_FILE RegistradorL1.v
 set_global_assignment -name VERILOG_FILE RegistradorL2.v
 set_global_assignment -name VERILOG_FILE RegistradorL3.v
+set_global_assignment -name VERILOG_FILE RegistradorL4.v
+set_global_assignment -name VERILOG_FILE RegistradorL5.v
