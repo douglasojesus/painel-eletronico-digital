@@ -1,5 +1,5 @@
 Flow report for Letreiro
-Fri Apr 14 15:20:50 2023
+Fri Apr 14 22:28:26 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +---------------------------+--------------------------------------------+
-; Flow Status               ; Successful - Fri Apr 14 15:20:50 2023      ;
+; Flow Status               ; Successful - Fri Apr 14 22:28:26 2023      ;
 ; Quartus II 64-Bit Version ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name             ; Letreiro                                   ;
 ; Top-level Entity Name     ; Letreiro                                   ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/14/2023 15:20:39 ;
+; Start date & time ; 04/14/2023 22:24:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Letreiro            ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ applicable agreement for further details.
 +---------------------------------------+---------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                       ; Value                                                                                             ; Default Value ; Entity Name ; Section Id     ;
 +---------------------------------------+---------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 123598315015815.168149643909980                                                                   ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                 ; 123598315015815.168152187114348                                                                   ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; On                                                                                                ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR         ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/Letreiro/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT                ; Verilog Hdl                                                                                       ; --            ; --          ; eda_simulation ;
@@ -87,12 +87,13 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4606 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:03     ; 1.0                     ; 5237 MB             ; 00:00:01                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4564 MB             ; 00:00:00                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4606 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:03     ; 1.0                     ; 5232 MB             ; 00:00:01                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4564 MB             ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4596 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4535 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4530 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:05                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,6 +107,7 @@ applicable agreement for further details.
 ; Assembler                 ; DOUG-NOTEBOOK    ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DOUG-NOTEBOOK    ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DOUG-NOTEBOOK    ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DOUG-NOTEBOOK    ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -117,6 +119,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off Letreiro -c Let
 quartus_asm --read_settings_files=off --write_settings_files=off Letreiro -c Letreiro
 quartus_sta Letreiro -c Letreiro
 quartus_eda --read_settings_files=off --write_settings_files=off Letreiro -c Letreiro
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Letreiro -c Letreiro --vector_source=C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/Waveform.vwf --testbench_file=C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/simulation/qsim/Waveform.vwf.vt
 
 
 

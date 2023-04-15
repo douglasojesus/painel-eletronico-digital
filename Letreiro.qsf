@@ -68,3 +68,10 @@ set_global_assignment -name VERILOG_FILE RegistradorL2.v
 set_global_assignment -name VERILOG_FILE RegistradorL3.v
 set_global_assignment -name VERILOG_FILE RegistradorL4.v
 set_global_assignment -name VERILOG_FILE RegistradorL5.v
+set_global_assignment -name VERILOG_FILE Demultiplexador.v
+set_global_assignment -name VERILOG_FILE RegistradorColuna.v
+set_global_assignment -name VERILOG_FILE FlipflopDSemMux.v
+set_global_assignment -name VERILOG_FILE RegistradorLinha.v
+set_global_assignment -name VERILOG_FILE MatrizDeLEDs.v
+set_global_assignment -name VERILOG_FILE FlipflopT.v
+set_global_assignment -name VERILOG_FILE Contador.v
