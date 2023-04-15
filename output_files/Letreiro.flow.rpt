@@ -1,5 +1,5 @@
 Flow report for Letreiro
-Sat Apr 15 16:35:58 2023
+Sat Apr 15 17:53:07 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +---------------------------+--------------------------------------------+
-; Flow Status               ; Successful - Sat Apr 15 16:35:58 2023      ;
+; Flow Status               ; Successful - Sat Apr 15 17:53:07 2023      ;
 ; Quartus II 64-Bit Version ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name             ; Letreiro                                   ;
 ; Top-level Entity Name     ; Letreiro                                   ;
 ; Family                    ; MAX II                                     ;
 ; Device                    ; EPM240T100C5                               ;
 ; Timing Models             ; Final                                      ;
-; Total logic elements      ; 88 / 240 ( 37 % )                          ;
+; Total logic elements      ; 98 / 240 ( 41 % )                          ;
 ; Total pins                ; 15 / 80 ( 19 % )                           ;
 ; Total virtual pins        ; 0                                          ;
 ; UFM blocks                ; 0 / 1 ( 0 % )                              ;
@@ -59,27 +59,27 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/15/2023 16:35:45 ;
+; Start date & time ; 04/15/2023 17:52:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Letreiro            ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                                         ;
-+---------------------------------------+---------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                       ; Value                                                                                             ; Default Value ; Entity Name ; Section Id     ;
-+---------------------------------------+---------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 123598315015815.168158734514980                                                                   ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST       ; On                                                                                                ; --            ; --          ; eda_simulation ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR         ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/Letreiro/simulation/qsim/ ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT                ; Verilog Hdl                                                                                       ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                   ; ModelSim-Altera (Verilog)                                                                         ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP                ; 85                                                                                                ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP                ; 0                                                                                                 ; --            ; --          ; --             ;
-; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                                                                                              ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY              ; output_files                                                                                      ; --            ; --          ; --             ;
-+---------------------------------------+---------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                            ;
++---------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                       ; Value                                                                                                ; Default Value ; Entity Name ; Section Id     ;
++---------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                 ; 123598315015815.168159197306540                                                                      ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST       ; On                                                                                                   ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR         ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT                ; Verilog Hdl                                                                                          ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                   ; ModelSim-Altera (Verilog)                                                                            ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                                                                                                   ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                                                                                                    ; --            ; --          ; --             ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                                                                                                 ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY              ; output_files                                                                                         ; --            ; --          ; --             ;
++---------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -87,12 +87,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4606 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:02     ; 1.0                     ; 5234 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4604 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:03     ; 1.0                     ; 5243 MB             ; 00:00:02                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 4564 MB             ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4590 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4535 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:05                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

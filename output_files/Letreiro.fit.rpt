@@ -1,5 +1,5 @@
 Fitter report for Letreiro
-Sat Apr 15 16:35:50 2023
+Sat Apr 15 17:52:59 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -56,14 +56,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +---------------------------+--------------------------------------------+
-; Fitter Status             ; Successful - Sat Apr 15 16:35:50 2023      ;
+; Fitter Status             ; Successful - Sat Apr 15 17:52:59 2023      ;
 ; Quartus II 64-Bit Version ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name             ; Letreiro                                   ;
 ; Top-level Entity Name     ; Letreiro                                   ;
 ; Family                    ; MAX II                                     ;
 ; Device                    ; EPM240T100C5                               ;
 ; Timing Models             ; Final                                      ;
-; Total logic elements      ; 88 / 240 ( 37 % )                          ;
+; Total logic elements      ; 98 / 240 ( 41 % )                          ;
 ; Total pins                ; 15 / 80 ( 19 % )                           ;
 ; Total virtual pins        ; 0                                          ;
 ; UFM blocks                ; 0 / 1 ( 0 % )                              ;
@@ -147,43 +147,43 @@ The pin-out file can be found in C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circu
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Total logic elements                        ; 88 / 240 ( 37 % ) ;
+; Total logic elements                        ; 98 / 240 ( 41 % ) ;
 ;     -- Combinational with no register       ; 21                ;
-;     -- Register only                        ; 0                 ;
-;     -- Combinational with a register        ; 67                ;
+;     -- Register only                        ; 9                 ;
+;     -- Combinational with a register        ; 68                ;
 ;                                             ;                   ;
 ; Logic element usage by number of LUT inputs ;                   ;
 ;     -- 4 input functions                    ; 78                ;
 ;     -- 3 input functions                    ; 5                 ;
 ;     -- 2 input functions                    ; 2                 ;
-;     -- 1 input functions                    ; 3                 ;
+;     -- 1 input functions                    ; 4                 ;
 ;     -- 0 input functions                    ; 0                 ;
 ;                                             ;                   ;
 ; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 88                ;
+;     -- normal mode                          ; 98                ;
 ;     -- arithmetic mode                      ; 0                 ;
 ;     -- qfbk mode                            ; 0                 ;
 ;     -- register cascade mode                ; 0                 ;
-;     -- synchronous clear/load mode          ; 0                 ;
+;     -- synchronous clear/load mode          ; 5                 ;
 ;     -- asynchronous clear/load mode         ; 0                 ;
 ;                                             ;                   ;
-; Total registers                             ; 67 / 240 ( 28 % ) ;
-; Total LABs                                  ; 10 / 24 ( 42 % )  ;
+; Total registers                             ; 77 / 240 ( 32 % ) ;
+; Total LABs                                  ; 12 / 24 ( 50 % )  ;
 ; Logic elements in carry chains              ; 0                 ;
 ; Virtual pins                                ; 0                 ;
 ; I/O pins                                    ; 15 / 80 ( 19 % )  ;
 ;     -- Clock pins                           ; 2 / 4 ( 50 % )    ;
 ;                                             ;                   ;
-; Global signals                              ; 1                 ;
+; Global signals                              ; 2                 ;
 ; UFM blocks                                  ; 0 / 1 ( 0 % )     ;
-; Global clocks                               ; 1 / 4 ( 25 % )    ;
+; Global clocks                               ; 2 / 4 ( 50 % )    ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )     ;
-; Average interconnect usage (total/H/V)      ; 6% / 5% / 6%      ;
-; Peak interconnect usage (total/H/V)         ; 6% / 5% / 6%      ;
+; Average interconnect usage (total/H/V)      ; 5% / 4% / 5%      ;
+; Peak interconnect usage (total/H/V)         ; 5% / 4% / 5%      ;
 ; Maximum fan-out                             ; 65                ;
 ; Highest non-global fan-out                  ; 65                ;
-; Total fan-out                               ; 477               ;
-; Average fan-out                             ; 4.63              ;
+; Total fan-out                               ; 497               ;
+; Average fan-out                             ; 4.40              ;
 +---------------------------------------------+-------------------+
 
 
@@ -192,9 +192,9 @@ The pin-out file can be found in C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circu
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
-; CLK  ; 14    ; 1        ; 1            ; 2            ; 0           ; 65                    ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
-; ch0  ; 74    ; 2        ; 8            ; 4            ; 0           ; 65                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
-; ch1  ; 64    ; 2        ; 8            ; 3            ; 4           ; 65                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
+; CLK  ; 14    ; 1        ; 1            ; 2            ; 0           ; 11                    ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
+; ch0  ; 61    ; 2        ; 8            ; 2            ; 1           ; 65                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
+; ch1  ; 70    ; 2        ; 8            ; 4            ; 4           ; 65                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
 
 
@@ -203,18 +203,18 @@ The pin-out file can be found in C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circu
 +------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Fast Output Connection ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
-; C1   ; 88    ; 2        ; 5            ; 5            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; Fitter               ; 10 pF ; -                    ; -                   ;
-; C2   ; 85    ; 2        ; 5            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; Fitter               ; 10 pF ; -                    ; -                   ;
-; C3   ; 40    ; 1        ; 5            ; 0            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; C4   ; 42    ; 1        ; 5            ; 0            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; C5   ; 39    ; 1        ; 5            ; 0            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; C6   ; 41    ; 1        ; 5            ; 0            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; C7   ; 67    ; 2        ; 8            ; 3            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; L1   ; 66    ; 2        ; 8            ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; L2   ; 81    ; 2        ; 6            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; L3   ; 69    ; 2        ; 8            ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; L4   ; 86    ; 2        ; 5            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; L5   ; 87    ; 2        ; 5            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; C1   ; 91    ; 2        ; 4            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; C2   ; 40    ; 1        ; 5            ; 0            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; C3   ; 86    ; 2        ; 5            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; C4   ; 85    ; 2        ; 5            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; C5   ; 88    ; 2        ; 5            ; 5            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; C6   ; 64    ; 2        ; 8            ; 3            ; 4           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; C7   ; 39    ; 1        ; 5            ; 0            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; L1   ; 8     ; 1        ; 1            ; 3            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; L2   ; 87    ; 2        ; 5            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; L3   ; 90    ; 2        ; 4            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; L4   ; 36    ; 1        ; 4            ; 0            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; L5   ; 89    ; 2        ; 4            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 
 
@@ -240,7 +240,7 @@ The pin-out file can be found in C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circu
 ; 5        ; 3          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 6        ; 4          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 7        ; 5          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 8        ; 6          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; 8        ; 6          ; 1        ; L1             ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 9        ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; 10       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; 11       ;            ;          ; GNDINT         ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
@@ -268,13 +268,13 @@ The pin-out file can be found in C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circu
 ; 33       ; 25         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 34       ; 26         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 35       ; 27         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 36       ; 28         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 36       ; 28         ; 1        ; L4             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
 ; 37       ; 29         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 38       ; 30         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 39       ; 31         ; 1        ; C5             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
-; 40       ; 32         ; 1        ; C3             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
-; 41       ; 33         ; 1        ; C6             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
-; 42       ; 34         ; 1        ; C4             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 39       ; 31         ; 1        ; C7             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 40       ; 32         ; 1        ; C2             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 41       ; 33         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 42       ; 34         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 43       ; 35         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 44       ; 36         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 45       ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
@@ -293,37 +293,37 @@ The pin-out file can be found in C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circu
 ; 58       ; 48         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 59       ;            ; 2        ; VCCIO2         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; 60       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
-; 61       ; 49         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; 61       ; 49         ; 2        ; ch0            ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 62       ; 50         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 63       ;            ;          ; VCCINT         ; power  ;              ; 2.5V/3.3V ; --         ;                 ; --       ; --           ;
-; 64       ; 51         ; 2        ; ch1            ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; 64       ; 51         ; 2        ; C6             ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 65       ;            ;          ; GNDINT         ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
-; 66       ; 52         ; 2        ; L1             ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
-; 67       ; 53         ; 2        ; C7             ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; 66       ; 52         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; 67       ; 53         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 68       ; 54         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 69       ; 55         ; 2        ; L3             ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
-; 70       ; 56         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; 69       ; 55         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; 70       ; 56         ; 2        ; ch1            ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 71       ; 57         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 72       ; 58         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 73       ; 59         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 74       ; 60         ; 2        ; ch0            ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; 74       ; 60         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 75       ; 61         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 76       ; 62         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 77       ; 63         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 78       ; 64         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 79       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; 80       ;            ; 2        ; VCCIO2         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
-; 81       ; 65         ; 2        ; L2             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 81       ; 65         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 82       ; 66         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 83       ; 67         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 84       ; 68         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 85       ; 69         ; 2        ; C2             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
-; 86       ; 70         ; 2        ; L4             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
-; 87       ; 71         ; 2        ; L5             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
-; 88       ; 72         ; 2        ; C1             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
-; 89       ; 73         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 90       ; 74         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 91       ; 75         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 85       ; 69         ; 2        ; C4             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 86       ; 70         ; 2        ; C3             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 87       ; 71         ; 2        ; L2             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 88       ; 72         ; 2        ; C5             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 89       ; 73         ; 2        ; L5             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 90       ; 74         ; 2        ; L3             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 91       ; 75         ; 2        ; C1             ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
 ; 92       ; 76         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 93       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; 94       ;            ; 2        ; VCCIO2         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
@@ -353,93 +353,104 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                           ;
-+-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                         ; Library Name ;
-+-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; |Letreiro                     ; 88 (0)      ; 67           ; 0          ; 15   ; 0            ; 21 (0)       ; 0 (0)             ; 67 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro                                                   ; work         ;
-;    |MatrizDeLEDs:inst1|       ; 23 (6)      ; 3            ; 0          ; 0    ; 0            ; 20 (6)       ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1                                ; work         ;
-;       |Contador:inst1|        ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1                 ; work         ;
-;          |FlipflopT:inst1|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1 ; work         ;
-;          |FlipflopT:inst2|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2 ; work         ;
-;          |FlipflopT:inst3|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3 ; work         ;
-;       |MUXParaColuna:SaidaC1| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC1          ; work         ;
-;       |MUXParaColuna:SaidaC2| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC2          ; work         ;
-;       |MUXParaColuna:SaidaC3| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC3          ; work         ;
-;       |MUXParaColuna:SaidaC4| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC4          ; work         ;
-;       |MUXParaColuna:SaidaC5| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC5          ; work         ;
-;       |MUXParaColuna:SaidaC6| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC6          ; work         ;
-;       |MUXParaColuna:SaidaC7| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC7          ; work         ;
-;    |RegistradorL1:instL1|     ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1                              ; work         ;
-;       |FlipflopD:inst10|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst10             ; work         ;
-;       |FlipflopD:inst11|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst11             ; work         ;
-;       |FlipflopD:inst12|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst12             ; work         ;
-;       |FlipflopD:inst13|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst13             ; work         ;
-;       |FlipflopD:inst14|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst14             ; work         ;
-;       |FlipflopD:inst15|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst15             ; work         ;
-;       |FlipflopD:inst16|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst16             ; work         ;
-;       |FlipflopD:inst1|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst1              ; work         ;
-;       |FlipflopD:inst2|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst2              ; work         ;
-;       |FlipflopD:inst3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst3              ; work         ;
-;       |FlipflopD:inst4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst4              ; work         ;
-;       |FlipflopD:inst5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst5              ; work         ;
-;       |FlipflopD:inst6|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst6              ; work         ;
-;       |FlipflopD:inst7|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst7              ; work         ;
-;       |FlipflopD:inst8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst8              ; work         ;
-;       |FlipflopD:inst9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst9              ; work         ;
-;    |RegistradorL2:instL2|     ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2                              ; work         ;
-;       |FlipflopD:inst10|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst10             ; work         ;
-;       |FlipflopD:inst11|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst11             ; work         ;
-;       |FlipflopD:inst12|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst12             ; work         ;
-;       |FlipflopD:inst13|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst13             ; work         ;
-;       |FlipflopD:inst14|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst14             ; work         ;
-;       |FlipflopD:inst15|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst15             ; work         ;
-;       |FlipflopD:inst16|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst16             ; work         ;
-;       |FlipflopD:inst1|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst1              ; work         ;
-;       |FlipflopD:inst2|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst2              ; work         ;
-;       |FlipflopD:inst3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst3              ; work         ;
-;       |FlipflopD:inst4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst4              ; work         ;
-;       |FlipflopD:inst5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst5              ; work         ;
-;       |FlipflopD:inst6|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst6              ; work         ;
-;       |FlipflopD:inst7|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst7              ; work         ;
-;       |FlipflopD:inst8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst8              ; work         ;
-;       |FlipflopD:inst9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst9              ; work         ;
-;    |RegistradorL4:instL4|     ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4                              ; work         ;
-;       |FlipflopD:inst10|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst10             ; work         ;
-;       |FlipflopD:inst11|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst11             ; work         ;
-;       |FlipflopD:inst12|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst12             ; work         ;
-;       |FlipflopD:inst13|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst13             ; work         ;
-;       |FlipflopD:inst14|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst14             ; work         ;
-;       |FlipflopD:inst15|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst15             ; work         ;
-;       |FlipflopD:inst16|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst16             ; work         ;
-;       |FlipflopD:inst1|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst1              ; work         ;
-;       |FlipflopD:inst2|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst2              ; work         ;
-;       |FlipflopD:inst3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst3              ; work         ;
-;       |FlipflopD:inst4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst4              ; work         ;
-;       |FlipflopD:inst5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst5              ; work         ;
-;       |FlipflopD:inst6|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst6              ; work         ;
-;       |FlipflopD:inst7|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst7              ; work         ;
-;       |FlipflopD:inst8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst8              ; work         ;
-;       |FlipflopD:inst9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst9              ; work         ;
-;    |RegistradorL5:instL5|     ; 17 (0)      ; 16           ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5                              ; work         ;
-;       |FlipflopD:inst10|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst10             ; work         ;
-;       |FlipflopD:inst11|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst11             ; work         ;
-;       |FlipflopD:inst12|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst12             ; work         ;
-;       |FlipflopD:inst13|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst13             ; work         ;
-;       |FlipflopD:inst14|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst14             ; work         ;
-;       |FlipflopD:inst15|      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst15             ; work         ;
-;       |FlipflopD:inst16|      ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst16             ; work         ;
-;       |FlipflopD:inst1|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst1              ; work         ;
-;       |FlipflopD:inst2|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst2              ; work         ;
-;       |FlipflopD:inst3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst3              ; work         ;
-;       |FlipflopD:inst4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst4              ; work         ;
-;       |FlipflopD:inst5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst5              ; work         ;
-;       |FlipflopD:inst6|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst6              ; work         ;
-;       |FlipflopD:inst7|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst7              ; work         ;
-;       |FlipflopD:inst8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst8              ; work         ;
-;       |FlipflopD:inst9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst9              ; work         ;
-+-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                               ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                         ; Library Name ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
+; |Letreiro                         ; 98 (0)      ; 77           ; 0          ; 15   ; 0            ; 21 (0)       ; 9 (0)             ; 68 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro                                                   ; work         ;
+;    |DivisorDeFrequencia:CLKpor10| ; 10 (0)      ; 10           ; 0          ; 0    ; 0            ; 0 (0)        ; 9 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10                      ; work         ;
+;       |FFD:inst10|                ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst10           ; work         ;
+;       |FFD:inst1|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst1            ; work         ;
+;       |FFD:inst2|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst2            ; work         ;
+;       |FFD:inst3|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst3            ; work         ;
+;       |FFD:inst4|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst4            ; work         ;
+;       |FFD:inst5|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst5            ; work         ;
+;       |FFD:inst6|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst6            ; work         ;
+;       |FFD:inst7|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst7            ; work         ;
+;       |FFD:inst8|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst8            ; work         ;
+;       |FFD:inst9|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst9            ; work         ;
+;    |MatrizDeLEDs:inst1|           ; 23 (6)      ; 3            ; 0          ; 0    ; 0            ; 20 (6)       ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1                                ; work         ;
+;       |Contador:inst1|            ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1                 ; work         ;
+;          |FlipflopT:inst1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1 ; work         ;
+;          |FlipflopT:inst2|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2 ; work         ;
+;          |FlipflopT:inst3|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3 ; work         ;
+;       |MUXParaColuna:SaidaC1|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC1          ; work         ;
+;       |MUXParaColuna:SaidaC2|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC2          ; work         ;
+;       |MUXParaColuna:SaidaC3|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC3          ; work         ;
+;       |MUXParaColuna:SaidaC4|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC4          ; work         ;
+;       |MUXParaColuna:SaidaC5|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC5          ; work         ;
+;       |MUXParaColuna:SaidaC6|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC6          ; work         ;
+;       |MUXParaColuna:SaidaC7|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC7          ; work         ;
+;    |RegistradorL1:instL1|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1                              ; work         ;
+;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst10             ; work         ;
+;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst11             ; work         ;
+;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst12             ; work         ;
+;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst13             ; work         ;
+;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst14             ; work         ;
+;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst15             ; work         ;
+;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst16             ; work         ;
+;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst1              ; work         ;
+;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst2              ; work         ;
+;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst3              ; work         ;
+;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst4              ; work         ;
+;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst5              ; work         ;
+;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst6              ; work         ;
+;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst7              ; work         ;
+;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst8              ; work         ;
+;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst9              ; work         ;
+;    |RegistradorL2:instL2|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2                              ; work         ;
+;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst10             ; work         ;
+;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst11             ; work         ;
+;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst12             ; work         ;
+;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst13             ; work         ;
+;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst14             ; work         ;
+;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst15             ; work         ;
+;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst16             ; work         ;
+;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst1              ; work         ;
+;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst2              ; work         ;
+;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst3              ; work         ;
+;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst4              ; work         ;
+;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst5              ; work         ;
+;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst6              ; work         ;
+;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst7              ; work         ;
+;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst8              ; work         ;
+;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst9              ; work         ;
+;    |RegistradorL4:instL4|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4                              ; work         ;
+;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst10             ; work         ;
+;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst11             ; work         ;
+;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst12             ; work         ;
+;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst13             ; work         ;
+;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst14             ; work         ;
+;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst15             ; work         ;
+;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst16             ; work         ;
+;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst1              ; work         ;
+;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst2              ; work         ;
+;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst3              ; work         ;
+;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst4              ; work         ;
+;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst5              ; work         ;
+;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst6              ; work         ;
+;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst7              ; work         ;
+;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst8              ; work         ;
+;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst9              ; work         ;
+;    |RegistradorL5:instL5|         ; 17 (0)      ; 16           ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5                              ; work         ;
+;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst10             ; work         ;
+;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst11             ; work         ;
+;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst12             ; work         ;
+;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst13             ; work         ;
+;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst14             ; work         ;
+;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst15             ; work         ;
+;       |FlipflopD:inst16|          ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst16             ; work         ;
+;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst1              ; work         ;
+;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst2              ; work         ;
+;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst3              ; work         ;
+;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst4              ; work         ;
+;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst5              ; work         ;
+;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst6              ; work         ;
+;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst7              ; work         ;
+;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst8              ; work         ;
+;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst9              ; work         ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -471,20 +482,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+-------------+---------+--------------+--------+----------------------+------------------+
 ; Name                                                ; Location    ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
 +-----------------------------------------------------+-------------+---------+--------------+--------+----------------------+------------------+
-; CLK                                                 ; PIN_14      ; 65      ; Clock        ; yes    ; Global Clock         ; GCLK1            ;
-; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; LC_X5_Y3_N2 ; 8       ; Clock        ; no     ; --                   ; --               ;
-; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; LC_X5_Y3_N8 ; 7       ; Clock        ; no     ; --                   ; --               ;
-; RegistradorL5:instL5|FlipflopD:inst16|en            ; LC_X5_Y4_N9 ; 64      ; Clock enable ; no     ; --                   ; --               ;
+; CLK                                                 ; PIN_14      ; 11      ; Clock        ; yes    ; Global Clock         ; GCLK1            ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; LC_X2_Y3_N1 ; 65      ; Clock        ; yes    ; Global Clock         ; GCLK3            ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; LC_X3_Y3_N2 ; 8       ; Clock        ; no     ; --                   ; --               ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; LC_X4_Y3_N3 ; 7       ; Clock        ; no     ; --                   ; --               ;
+; RegistradorL5:instL5|FlipflopD:inst16|en            ; LC_X6_Y4_N2 ; 64      ; Clock enable ; no     ; --                   ; --               ;
 +-----------------------------------------------------+-------------+---------+--------------+--------+----------------------+------------------+
 
 
-+---------------------------------------------------------------------+
-; Global & Other Fast Signals                                         ;
-+------+----------+---------+----------------------+------------------+
-; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
-+------+----------+---------+----------------------+------------------+
-; CLK  ; PIN_14   ; 65      ; Global Clock         ; GCLK1            ;
-+------+----------+---------+----------------------+------------------+
++-------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                 ;
++-------------------------------------------+-------------+---------+----------------------+------------------+
+; Name                                      ; Location    ; Fan-Out ; Global Resource Used ; Global Line Name ;
++-------------------------------------------+-------------+---------+----------------------+------------------+
+; CLK                                       ; PIN_14      ; 11      ; Global Clock         ; GCLK1            ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; LC_X2_Y3_N1 ; 65      ; Global Clock         ; GCLK3            ;
++-------------------------------------------+-------------+---------+----------------------+------------------+
 
 
 +---------------------------------------------------------------+
@@ -565,6 +578,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; RegistradorL4:instL4|FlipflopD:inst16|Q             ; 2       ;
 ; RegistradorL1:instL1|FlipflopD:inst16|Q             ; 2       ;
 ; RegistradorL2:instL2|FlipflopD:inst16|Q             ; 2       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ; 1       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst2|Q            ; 1       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst3|Q            ; 1       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst4|Q            ; 1       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst5|Q            ; 1       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst6|Q            ; 1       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst7|Q            ; 1       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst8|Q            ; 1       ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst9|Q            ; 1       ;
 ; MatrizDeLEDs:inst1|MUXParaColuna:SaidaC7|WideOr0~1  ; 1       ;
 ; MatrizDeLEDs:inst1|MUXParaColuna:SaidaC7|WideOr0~0  ; 1       ;
 ; MatrizDeLEDs:inst1|MUXParaColuna:SaidaC6|WideOr0~1  ; 1       ;
@@ -590,90 +612,87 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------+
 ; Routing Resource Type ; Usage             ;
 +-----------------------+-------------------+
-; C4s                   ; 43 / 784 ( 5 % )  ;
-; Direct links          ; 31 / 888 ( 3 % )  ;
-; Global clocks         ; 1 / 4 ( 25 % )    ;
-; LAB clocks            ; 4 / 32 ( 13 % )   ;
-; LUT chains            ; 0 / 216 ( 0 % )   ;
-; Local interconnects   ; 99 / 888 ( 11 % ) ;
-; R4s                   ; 35 / 704 ( 5 % )  ;
+; C4s                   ; 38 / 784 ( 5 % )  ;
+; Direct links          ; 26 / 888 ( 3 % )  ;
+; Global clocks         ; 2 / 4 ( 50 % )    ;
+; LAB clocks            ; 6 / 32 ( 19 % )   ;
+; LUT chains            ; 1 / 216 ( < 1 % ) ;
+; Local interconnects   ; 95 / 888 ( 11 % ) ;
+; R4s                   ; 26 / 704 ( 4 % )  ;
 +-----------------------+-------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 8.80) ; Number of LABs  (Total = 10) ;
+; Number of Logic Elements  (Average = 8.17) ; Number of LABs  (Total = 12) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 0                            ;
+; 1                                          ; 2                            ;
 ; 2                                          ; 0                            ;
 ; 3                                          ; 0                            ;
 ; 4                                          ; 0                            ;
-; 5                                          ; 1                            ;
+; 5                                          ; 0                            ;
 ; 6                                          ; 1                            ;
 ; 7                                          ; 0                            ;
-; 8                                          ; 1                            ;
-; 9                                          ; 1                            ;
-; 10                                         ; 6                            ;
+; 8                                          ; 0                            ;
+; 9                                          ; 0                            ;
+; 10                                         ; 9                            ;
 +--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.70) ; Number of LABs  (Total = 10) ;
+; LAB-wide Signals  (Average = 1.58) ; Number of LABs  (Total = 12) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 10                           ;
-; 1 Clock enable                     ; 7                            ;
+; 1 Clock                            ; 11                           ;
+; 1 Clock enable                     ; 8                            ;
 +------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 8.80) ; Number of LABs  (Total = 10) ;
+; Number of Signals Sourced  (Average = 8.17) ; Number of LABs  (Total = 12) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 0                            ;
+; 1                                           ; 2                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
+; 5                                           ; 0                            ;
 ; 6                                           ; 1                            ;
 ; 7                                           ; 0                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 6                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 9                            ;
 +---------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 5.50) ; Number of LABs  (Total = 10) ;
+; Number of Signals Sourced Out  (Average = 3.83) ; Number of LABs  (Total = 12) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 0                            ;
-; 2                                               ; 0                            ;
+; 1                                               ; 3                            ;
+; 2                                               ; 3                            ;
 ; 3                                               ; 1                            ;
-; 4                                               ; 2                            ;
-; 5                                               ; 4                            ;
-; 6                                               ; 0                            ;
-; 7                                               ; 2                            ;
-; 8                                               ; 0                            ;
-; 9                                               ; 0                            ;
-; 10                                              ; 1                            ;
+; 4                                               ; 0                            ;
+; 5                                               ; 0                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 4                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 8.40) ; Number of LABs  (Total = 10) ;
+; Number of Distinct Inputs  (Average = 6.75) ; Number of LABs  (Total = 12) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 0                            ;
-; 2                                           ; 0                            ;
+; 1                                           ; 2                            ;
+; 2                                           ; 1                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
 ; 5                                           ; 1                            ;
@@ -681,12 +700,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
-; 10                                          ; 1                            ;
+; 10                                          ; 0                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 2                            ;
+; 12                                          ; 1                            ;
 ; 13                                          ; 0                            ;
 ; 14                                          ; 0                            ;
-; 15                                          ; 1                            ;
+; 15                                          ; 2                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -740,14 +759,17 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'Let
 Info (332144): No user constrained base clocks found in the design
 Info (332128): Timing requirements not specified -- optimizing circuit to achieve the following default global requirements
     Info (332127): Assuming a default timing requirement
-Info (332111): Found 3 clocks
+Info (332111): Found 4 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):    1.000          CLK
+    Info (332111):    1.000 DivisorDeFrequencia:CLKpor10|FFD:inst10|Q
     Info (332111):    1.000 MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q
     Info (332111):    1.000 MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q
 Info (186079): Completed User Assigned Global Signals Promotion Operation
 Info (186215): Automatically promoted signal "CLK" to use Global clock in PIN 14
+Info (186216): Automatically promoted some destinations of signal "DivisorDeFrequencia:CLKpor10|FFD:inst10|Q" to use Global clock
+    Info (186217): Destination "DivisorDeFrequencia:CLKpor10|FFD:inst1|Q" may be non-global or may not use global clock
 Info (186079): Completed Auto Global Promotion Operation
 Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
@@ -777,9 +799,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/output_files/Letreiro.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5234 megabytes
-    Info: Processing ended: Sat Apr 15 16:35:50 2023
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 5243 megabytes
+    Info: Processing ended: Sat Apr 15 17:52:59 2023
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

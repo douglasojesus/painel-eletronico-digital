@@ -51,7 +51,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name VERILOG_FILE Letreiro.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/Letreiro/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name VERILOG_FILE Verilog2.v
@@ -76,3 +76,6 @@ set_global_assignment -name VERILOG_FILE MatrizDeLEDs.v
 set_global_assignment -name VERILOG_FILE FlipflopT.v
 set_global_assignment -name VERILOG_FILE Contador.v
 set_global_assignment -name VERILOG_FILE MUXParaColuna.v
+set_global_assignment -name VERILOG_FILE DivisorDeFrequencia.v
+set_global_assignment -name VERILOG_FILE Multiplexador.v
+set_global_assignment -name VERILOG_FILE FFD.v

@@ -1,4 +1,4 @@
-module multiplexador(ch0, ch1, saida, para_exibicao, dir_esq, esq_dir);
+module Multiplexador(ch0, ch1, saida, para_exibicao, dir_esq, esq_dir);
 
 
 	input ch0, ch1, para_exibicao, dir_esq, esq_dir;

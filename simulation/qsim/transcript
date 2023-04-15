@@ -17,8 +17,11 @@
 # Loading work.Letreiro_vlg_vec_tst
 # Loading work.Letreiro
 # Loading maxii_ver.maxii_io
+# Loading maxii_ver.maxii_lcell
+# Loading maxii_ver.maxii_asynch_lcell
+# Loading maxii_ver.maxii_lcell_register
 # Loading work.Letreiro_vlg_sample_tst
 # Loading work.Letreiro_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform3.vwf.vt(314)
-#    Time: 160 ns  Iteration: 0  Instance: /Letreiro_vlg_vec_tst/tb_out
+# ** Note: $finish    : Waveform.vwf.vt(449)
+#    Time: 200 ns  Iteration: 0  Instance: /Letreiro_vlg_vec_tst/tb_out
