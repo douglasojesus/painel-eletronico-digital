@@ -3,15 +3,39 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'CLK'
-Slack : -2.335
-TNS   : -106.161
+Slack : -1.861
+TNS   : -100.787
+
+Type  : Setup 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
+Slack : -1.238
+TNS   : -1.238
+
+Type  : Setup 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
+Slack : 0.511
+TNS   : 0.000
 
 Type  : Hold 'CLK'
-Slack : 1.642
+Slack : -2.031
+TNS   : -2.031
+
+Type  : Hold 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
+Slack : -0.565
+TNS   : -0.565
+
+Type  : Hold 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
+Slack : 1.684
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'CLK'
 Slack : -2.289
 TNS   : -2.289
+
+Type  : Minimum Pulse Width 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
+Slack : 0.234
+TNS   : 0.000
 
 ------------------------------------------------------------

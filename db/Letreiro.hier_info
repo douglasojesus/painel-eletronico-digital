@@ -1,42 +1,19 @@
 |Letreiro
-CLK => CLK.IN5
+CLK => CLK.IN6
 ch0 => ch0.IN5
 ch1 => ch1.IN5
-C1L1 <= RegistradorL1:instL1.port3
-C2L1 <= RegistradorL1:instL1.port4
-C3L1 <= RegistradorL1:instL1.port5
-C4L1 <= RegistradorL1:instL1.port6
-C5L1 <= RegistradorL1:instL1.port7
-C6L1 <= RegistradorL1:instL1.port8
-C7L1 <= RegistradorL1:instL1.port9
-C1L2 <= RegistradorL2:instL2.port3
-C2L2 <= RegistradorL2:instL2.port4
-C3L2 <= RegistradorL2:instL2.port5
-C4L2 <= RegistradorL2:instL2.port6
-C5L2 <= RegistradorL2:instL2.port7
-C6L2 <= RegistradorL2:instL2.port8
-C7L2 <= RegistradorL2:instL2.port9
-C1L3 <= RegistradorL3:instL3.port3
-C2L3 <= RegistradorL3:instL3.port4
-C3L3 <= RegistradorL3:instL3.port5
-C4L3 <= RegistradorL3:instL3.port6
-C5L3 <= RegistradorL3:instL3.port7
-C6L3 <= RegistradorL3:instL3.port8
-C7L3 <= RegistradorL3:instL3.port9
-C1L4 <= RegistradorL4:instL4.port3
-C2L4 <= RegistradorL4:instL4.port4
-C3L4 <= RegistradorL4:instL4.port5
-C4L4 <= RegistradorL4:instL4.port6
-C5L4 <= RegistradorL4:instL4.port7
-C6L4 <= RegistradorL4:instL4.port8
-C7L4 <= RegistradorL4:instL4.port9
-C1L5 <= RegistradorL5:instL5.port3
-C2L5 <= RegistradorL5:instL5.port4
-C3L5 <= RegistradorL5:instL5.port5
-C4L5 <= RegistradorL5:instL5.port6
-C5L5 <= RegistradorL5:instL5.port7
-C6L5 <= RegistradorL5:instL5.port8
-C7L5 <= RegistradorL5:instL5.port9
+L1 <= MatrizDeLEDs:inst1.port1
+L2 <= MatrizDeLEDs:inst1.port2
+L3 <= MatrizDeLEDs:inst1.port3
+L4 <= MatrizDeLEDs:inst1.port4
+L5 <= MatrizDeLEDs:inst1.port5
+C1 <= MatrizDeLEDs:inst1.port6
+C2 <= MatrizDeLEDs:inst1.port7
+C3 <= MatrizDeLEDs:inst1.port8
+C4 <= MatrizDeLEDs:inst1.port9
+C5 <= MatrizDeLEDs:inst1.port10
+C6 <= MatrizDeLEDs:inst1.port11
+C7 <= MatrizDeLEDs:inst1.port12
 
 
 |Letreiro|RegistradorL1:instL1
@@ -1942,5 +1919,252 @@ saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 para_exibicao => WideAnd0.IN2
 dir_esq => WideAnd1.IN2
 esq_dir => WideAnd2.IN2
+
+
+|Letreiro|MatrizDeLEDs:inst1
+CLK => CLK.IN1
+L1 <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+L2 <= WideAnd1.DB_MAX_OUTPUT_PORT_TYPE
+L3 <= WideAnd2.DB_MAX_OUTPUT_PORT_TYPE
+L4 <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+L5 <= WideAnd4.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= MUXParaColuna:SaidaC1.port8
+C2 <= MUXParaColuna:SaidaC2.port8
+C3 <= MUXParaColuna:SaidaC3.port8
+C4 <= MUXParaColuna:SaidaC4.port8
+C5 <= MUXParaColuna:SaidaC5.port8
+C6 <= MUXParaColuna:SaidaC6.port8
+C7 <= MUXParaColuna:SaidaC7.port8
+C1L1 => C1L1.IN1
+C1L2 => C1L2.IN1
+C1L3 => C1L3.IN1
+C1L4 => C1L4.IN1
+C1L5 => C1L5.IN1
+C2L1 => C2L1.IN1
+C2L2 => C2L2.IN1
+C2L3 => C2L3.IN1
+C2L4 => C2L4.IN1
+C2L5 => C2L5.IN1
+C3L1 => C3L1.IN1
+C3L2 => C3L2.IN1
+C3L3 => C3L3.IN1
+C3L4 => C3L4.IN1
+C3L5 => C3L5.IN1
+C4L1 => C4L1.IN1
+C4L2 => C4L2.IN1
+C4L3 => C4L3.IN1
+C4L4 => C4L4.IN1
+C4L5 => C4L5.IN1
+C5L1 => C5L1.IN1
+C5L2 => C5L2.IN1
+C5L3 => C5L3.IN1
+C5L4 => C5L4.IN1
+C5L5 => C5L5.IN1
+C6L1 => C6L1.IN1
+C6L2 => C6L2.IN1
+C6L3 => C6L3.IN1
+C6L4 => C6L4.IN1
+C6L5 => C6L5.IN1
+C7L1 => C7L1.IN1
+C7L2 => C7L2.IN1
+C7L3 => C7L3.IN1
+C7L4 => C7L4.IN1
+C7L5 => C7L5.IN1
+
+
+|Letreiro|MatrizDeLEDs:inst1|Contador:inst1
+CLK => CLK.IN1
+Q1 <= Q1.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= Q2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= FlipflopT:inst3.port3
+
+
+|Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1
+clear => Q.OUTPUTSELECT
+CLK => Q~reg0.CLK
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2
+clear => Q.OUTPUTSELECT
+CLK => Q~reg0.CLK
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3
+clear => Q.OUTPUTSELECT
+CLK => Q~reg0.CLK
+T => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC1
+en1 => WideAnd0.IN0
+en1 => WideAnd1.IN0
+en1 => WideAnd2.IN0
+en1 => WideAnd3.IN0
+en1 => WideAnd4.IN0
+en2 => WideAnd2.IN1
+en2 => WideAnd3.IN1
+en2 => WideAnd4.IN1
+en2 => WideAnd0.IN1
+en2 => WideAnd1.IN1
+en3 => WideAnd1.IN2
+en3 => WideAnd3.IN2
+en3 => WideAnd4.IN2
+en3 => WideAnd0.IN2
+en3 => WideAnd2.IN2
+L1 => WideAnd0.IN3
+L2 => WideAnd1.IN3
+L3 => WideAnd2.IN3
+L4 => WideAnd3.IN3
+L5 => WideAnd4.IN3
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC2
+en1 => WideAnd0.IN0
+en1 => WideAnd1.IN0
+en1 => WideAnd2.IN0
+en1 => WideAnd3.IN0
+en1 => WideAnd4.IN0
+en2 => WideAnd2.IN1
+en2 => WideAnd3.IN1
+en2 => WideAnd4.IN1
+en2 => WideAnd0.IN1
+en2 => WideAnd1.IN1
+en3 => WideAnd1.IN2
+en3 => WideAnd3.IN2
+en3 => WideAnd4.IN2
+en3 => WideAnd0.IN2
+en3 => WideAnd2.IN2
+L1 => WideAnd0.IN3
+L2 => WideAnd1.IN3
+L3 => WideAnd2.IN3
+L4 => WideAnd3.IN3
+L5 => WideAnd4.IN3
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC3
+en1 => WideAnd0.IN0
+en1 => WideAnd1.IN0
+en1 => WideAnd2.IN0
+en1 => WideAnd3.IN0
+en1 => WideAnd4.IN0
+en2 => WideAnd2.IN1
+en2 => WideAnd3.IN1
+en2 => WideAnd4.IN1
+en2 => WideAnd0.IN1
+en2 => WideAnd1.IN1
+en3 => WideAnd1.IN2
+en3 => WideAnd3.IN2
+en3 => WideAnd4.IN2
+en3 => WideAnd0.IN2
+en3 => WideAnd2.IN2
+L1 => WideAnd0.IN3
+L2 => WideAnd1.IN3
+L3 => WideAnd2.IN3
+L4 => WideAnd3.IN3
+L5 => WideAnd4.IN3
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC4
+en1 => WideAnd0.IN0
+en1 => WideAnd1.IN0
+en1 => WideAnd2.IN0
+en1 => WideAnd3.IN0
+en1 => WideAnd4.IN0
+en2 => WideAnd2.IN1
+en2 => WideAnd3.IN1
+en2 => WideAnd4.IN1
+en2 => WideAnd0.IN1
+en2 => WideAnd1.IN1
+en3 => WideAnd1.IN2
+en3 => WideAnd3.IN2
+en3 => WideAnd4.IN2
+en3 => WideAnd0.IN2
+en3 => WideAnd2.IN2
+L1 => WideAnd0.IN3
+L2 => WideAnd1.IN3
+L3 => WideAnd2.IN3
+L4 => WideAnd3.IN3
+L5 => WideAnd4.IN3
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC5
+en1 => WideAnd0.IN0
+en1 => WideAnd1.IN0
+en1 => WideAnd2.IN0
+en1 => WideAnd3.IN0
+en1 => WideAnd4.IN0
+en2 => WideAnd2.IN1
+en2 => WideAnd3.IN1
+en2 => WideAnd4.IN1
+en2 => WideAnd0.IN1
+en2 => WideAnd1.IN1
+en3 => WideAnd1.IN2
+en3 => WideAnd3.IN2
+en3 => WideAnd4.IN2
+en3 => WideAnd0.IN2
+en3 => WideAnd2.IN2
+L1 => WideAnd0.IN3
+L2 => WideAnd1.IN3
+L3 => WideAnd2.IN3
+L4 => WideAnd3.IN3
+L5 => WideAnd4.IN3
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC6
+en1 => WideAnd0.IN0
+en1 => WideAnd1.IN0
+en1 => WideAnd2.IN0
+en1 => WideAnd3.IN0
+en1 => WideAnd4.IN0
+en2 => WideAnd2.IN1
+en2 => WideAnd3.IN1
+en2 => WideAnd4.IN1
+en2 => WideAnd0.IN1
+en2 => WideAnd1.IN1
+en3 => WideAnd1.IN2
+en3 => WideAnd3.IN2
+en3 => WideAnd4.IN2
+en3 => WideAnd0.IN2
+en3 => WideAnd2.IN2
+L1 => WideAnd0.IN3
+L2 => WideAnd1.IN3
+L3 => WideAnd2.IN3
+L4 => WideAnd3.IN3
+L5 => WideAnd4.IN3
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC7
+en1 => WideAnd0.IN0
+en1 => WideAnd1.IN0
+en1 => WideAnd2.IN0
+en1 => WideAnd3.IN0
+en1 => WideAnd4.IN0
+en2 => WideAnd2.IN1
+en2 => WideAnd3.IN1
+en2 => WideAnd4.IN1
+en2 => WideAnd0.IN1
+en2 => WideAnd1.IN1
+en3 => WideAnd1.IN2
+en3 => WideAnd3.IN2
+en3 => WideAnd4.IN2
+en3 => WideAnd0.IN2
+en3 => WideAnd2.IN2
+L1 => WideAnd0.IN3
+L2 => WideAnd1.IN3
+L3 => WideAnd2.IN3
+L4 => WideAnd3.IN3
+L5 => WideAnd4.IN3
+saida <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

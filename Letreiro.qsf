@@ -75,3 +75,4 @@ set_global_assignment -name VERILOG_FILE RegistradorLinha.v
 set_global_assignment -name VERILOG_FILE MatrizDeLEDs.v
 set_global_assignment -name VERILOG_FILE FlipflopT.v
 set_global_assignment -name VERILOG_FILE Contador.v
+set_global_assignment -name VERILOG_FILE MUXParaColuna.v
