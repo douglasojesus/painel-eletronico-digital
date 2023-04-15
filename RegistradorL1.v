@@ -1,7 +1,20 @@
 module RegistradorL1(ch0, ch1, CLK, saida1, saida2, saida3, saida4, saida5, saida6, saida7);
 
+	/*Registrador de deslocamento responsável por deslocar os bits da esquerda para direita e da direita para a esquerda
+	/dependendo das entradas ch0 e ch1. Para isso, é utilizado flipflops do tipo D e multiplexadores para controlar as
+	/saídas e entradas de todo o registrador. 
+	/A linha 1 possui 16 bits, representados por 1010_1110_1110_1110. Como a orientação do kit de desenvolvimento LEDS
+	/CLPD vai ser a vertical para a exibição, apenas 7 bits, representando as colunas, serão as saídas desse registrador.
+	*/
+	
+	/*Quando para_exibicao for acionado, os LEDs irão ser desligados e o registrador será setado com os valores iniciais
+	/pré-definidos. Quando dir_esq for acionado, o flipflop atual vai receber a saída do flipflop anterior. Ou seja, a 
+	/exibição será feita da direita para a esquerda, pois será nessa orientação que os bits serão deslocados. Quando 
+	/esq_dir for acionado, o flipflop atual vai receber a saída do flipflop posterior. Ou seja, a exibição será feita
+	/da esquerda para a direita, pois será nessa orientação que os bits serão deslocados.*/
+
 	//        U    E    F    S
-	//   16'b1010_1110_1110_1110;
+	//   16'b1010_1110_1110_1110
 	
 	input ch0, ch1, CLK;
 	output saida1, saida2, saida3, saida4, saida5, saida6, saida7;
