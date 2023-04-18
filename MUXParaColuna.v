@@ -13,6 +13,7 @@ module MUXParaColuna(en1, en2, en3, L1, L2, L3, L4, L5, saida);
 	and(w5, ~en1, en2, en3, L5);
 	
 	//Saída é a coluna (C1-C7)
-	or(saida, w1, w2, w3, w4, w5);
+	//Como a coluna é ativada em nível lógico baixo (0), utilizamos a porta nor como saída.
+	nor(saida, w1, w2, w3, w4, w5);
 
 endmodule

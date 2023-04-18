@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Letreiro
-Sat Apr 15 17:52:54 2023
+Mon Apr 17 23:39:06 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -124,12 +124,12 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Apr 15 17:52:54 2023      ;
+; Analysis & Synthesis Status ; Successful - Mon Apr 17 23:39:06 2023      ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; Letreiro                                   ;
 ; Top-level Entity Name       ; Letreiro                                   ;
 ; Family                      ; MAX II                                     ;
-; Total logic elements        ; 98                                         ;
+; Total logic elements        ; 101                                        ;
 ; Total pins                  ; 15                                         ;
 ; Total virtual pins          ; 0                                          ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                              ;
@@ -226,26 +226,26 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                              ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; Letreiro.v                       ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/Letreiro.v            ;         ;
-; FlipflopD.v                      ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/FlipflopD.v           ;         ;
-; multiplexador.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/multiplexador.v       ;         ;
-; RegistradorL1.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/RegistradorL1.v       ;         ;
-; RegistradorL2.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/RegistradorL2.v       ;         ;
-; RegistradorL3.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/RegistradorL3.v       ;         ;
-; RegistradorL4.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/RegistradorL4.v       ;         ;
-; RegistradorL5.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/RegistradorL5.v       ;         ;
-; MatrizDeLEDs.v                   ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/MatrizDeLEDs.v        ;         ;
-; FlipflopT.v                      ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/FlipflopT.v           ;         ;
-; Contador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/Contador.v            ;         ;
-; MUXParaColuna.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/MUXParaColuna.v       ;         ;
-; DivisorDeFrequencia.v            ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/DivisorDeFrequencia.v ;         ;
-; FFD.v                            ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/FFD.v                 ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                            ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; Letreiro.v                       ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/Letreiro.v            ;         ;
+; FlipflopD.v                      ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/FlipflopD.v           ;         ;
+; multiplexador.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/multiplexador.v       ;         ;
+; RegistradorL1.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/RegistradorL1.v       ;         ;
+; RegistradorL2.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/RegistradorL2.v       ;         ;
+; RegistradorL3.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/RegistradorL3.v       ;         ;
+; RegistradorL4.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/RegistradorL4.v       ;         ;
+; RegistradorL5.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/RegistradorL5.v       ;         ;
+; MatrizDeLEDs.v                   ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/MatrizDeLEDs.v        ;         ;
+; FlipflopT.v                      ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/FlipflopT.v           ;         ;
+; Contador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/Contador.v            ;         ;
+; MUXParaColuna.v                  ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/MUXParaColuna.v       ;         ;
+; DivisorDeFrequencia.v            ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/DivisorDeFrequencia.v ;         ;
+; FFD.v                            ; yes             ; User Verilog HDL File  ; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/FFD.v                 ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -253,20 +253,20 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 98    ;
-;     -- Combinational with no register       ; 21    ;
+; Total logic elements                        ; 101   ;
+;     -- Combinational with no register       ; 24    ;
 ;     -- Register only                        ; 9     ;
 ;     -- Combinational with a register        ; 68    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 78    ;
-;     -- 3 input functions                    ; 5     ;
-;     -- 2 input functions                    ; 2     ;
+;     -- 4 input functions                    ; 81    ;
+;     -- 3 input functions                    ; 4     ;
+;     -- 2 input functions                    ; 3     ;
 ;     -- 1 input functions                    ; 4     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 98    ;
+;     -- normal mode                          ; 101   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -276,110 +276,111 @@ applicable agreement for further details.
 ; Total registers                             ; 77    ;
 ; I/O pins                                    ; 15    ;
 ; Maximum fan-out node                        ; ch0   ;
-; Maximum fan-out                             ; 65    ;
-; Total fan-out                               ; 497   ;
-; Average fan-out                             ; 4.40  ;
+; Maximum fan-out                             ; 68    ;
+; Total fan-out                               ; 508   ;
+; Average fan-out                             ; 4.38  ;
 +---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
-+-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node        ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                         ; Library Name ;
-+-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; |Letreiro                         ; 98 (0)      ; 77           ; 0          ; 15   ; 0            ; 21 (0)       ; 9 (0)             ; 68 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro                                                   ; work         ;
-;    |DivisorDeFrequencia:CLKpor10| ; 10 (0)      ; 10           ; 0          ; 0    ; 0            ; 0 (0)        ; 9 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10                      ; work         ;
-;       |FFD:inst10|                ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst10           ; work         ;
-;       |FFD:inst1|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst1            ; work         ;
-;       |FFD:inst2|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst2            ; work         ;
-;       |FFD:inst3|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst3            ; work         ;
-;       |FFD:inst4|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst4            ; work         ;
-;       |FFD:inst5|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst5            ; work         ;
-;       |FFD:inst6|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst6            ; work         ;
-;       |FFD:inst7|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst7            ; work         ;
-;       |FFD:inst8|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst8            ; work         ;
-;       |FFD:inst9|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst9            ; work         ;
-;    |MatrizDeLEDs:inst1|           ; 23 (6)      ; 3            ; 0          ; 0    ; 0            ; 20 (6)       ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1                                ; work         ;
-;       |Contador:inst1|            ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1                 ; work         ;
-;          |FlipflopT:inst1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1 ; work         ;
-;          |FlipflopT:inst2|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2 ; work         ;
-;          |FlipflopT:inst3|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3 ; work         ;
-;       |MUXParaColuna:SaidaC1|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC1          ; work         ;
-;       |MUXParaColuna:SaidaC2|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC2          ; work         ;
-;       |MUXParaColuna:SaidaC3|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC3          ; work         ;
-;       |MUXParaColuna:SaidaC4|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC4          ; work         ;
-;       |MUXParaColuna:SaidaC5|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC5          ; work         ;
-;       |MUXParaColuna:SaidaC6|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC6          ; work         ;
-;       |MUXParaColuna:SaidaC7|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC7          ; work         ;
-;    |RegistradorL1:instL1|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1                              ; work         ;
-;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst10             ; work         ;
-;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst11             ; work         ;
-;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst12             ; work         ;
-;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst13             ; work         ;
-;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst14             ; work         ;
-;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst15             ; work         ;
-;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst16             ; work         ;
-;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst1              ; work         ;
-;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst2              ; work         ;
-;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst3              ; work         ;
-;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst4              ; work         ;
-;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst5              ; work         ;
-;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst6              ; work         ;
-;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst7              ; work         ;
-;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst8              ; work         ;
-;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst9              ; work         ;
-;    |RegistradorL2:instL2|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2                              ; work         ;
-;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst10             ; work         ;
-;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst11             ; work         ;
-;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst12             ; work         ;
-;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst13             ; work         ;
-;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst14             ; work         ;
-;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst15             ; work         ;
-;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst16             ; work         ;
-;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst1              ; work         ;
-;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst2              ; work         ;
-;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst3              ; work         ;
-;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst4              ; work         ;
-;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst5              ; work         ;
-;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst6              ; work         ;
-;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst7              ; work         ;
-;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst8              ; work         ;
-;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst9              ; work         ;
-;    |RegistradorL4:instL4|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4                              ; work         ;
-;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst10             ; work         ;
-;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst11             ; work         ;
-;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst12             ; work         ;
-;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst13             ; work         ;
-;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst14             ; work         ;
-;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst15             ; work         ;
-;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst16             ; work         ;
-;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst1              ; work         ;
-;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst2              ; work         ;
-;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst3              ; work         ;
-;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst4              ; work         ;
-;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst5              ; work         ;
-;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst6              ; work         ;
-;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst7              ; work         ;
-;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst8              ; work         ;
-;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst9              ; work         ;
-;    |RegistradorL5:instL5|         ; 17 (0)      ; 16           ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5                              ; work         ;
-;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst10             ; work         ;
-;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst11             ; work         ;
-;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst12             ; work         ;
-;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst13             ; work         ;
-;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst14             ; work         ;
-;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst15             ; work         ;
-;       |FlipflopD:inst16|          ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst16             ; work         ;
-;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst1              ; work         ;
-;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst2              ; work         ;
-;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst3              ; work         ;
-;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst4              ; work         ;
-;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst5              ; work         ;
-;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst6              ; work         ;
-;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst7              ; work         ;
-;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst8              ; work         ;
-;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst9              ; work         ;
-+-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                      ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                              ; Library Name ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+--------------+
+; |Letreiro                         ; 101 (0)     ; 77           ; 0          ; 15   ; 0            ; 24 (0)       ; 9 (0)             ; 68 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro                                                        ; work         ;
+;    |DivisorDeFrequencia:CLKpor10| ; 10 (0)      ; 10           ; 0          ; 0    ; 0            ; 0 (0)        ; 9 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10                           ; work         ;
+;       |FFD:inst10|                ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst10                ; work         ;
+;       |FFD:inst1|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst1                 ; work         ;
+;       |FFD:inst2|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst2                 ; work         ;
+;       |FFD:inst3|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst3                 ; work         ;
+;       |FFD:inst4|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst4                 ; work         ;
+;       |FFD:inst5|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst5                 ; work         ;
+;       |FFD:inst6|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst6                 ; work         ;
+;       |FFD:inst7|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst7                 ; work         ;
+;       |FFD:inst8|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst8                 ; work         ;
+;       |FFD:inst9|                 ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|DivisorDeFrequencia:CLKpor10|FFD:inst9                 ; work         ;
+;    |MatrizDeLEDs:inst1|           ; 25 (8)      ; 3            ; 0          ; 0    ; 0            ; 22 (8)       ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1                                     ; work         ;
+;       |Contador:inst1|            ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1                      ; work         ;
+;          |FlipflopT:inst1|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1      ; work         ;
+;          |FlipflopT:inst2|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2      ; work         ;
+;          |FlipflopT:inst3|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3      ; work         ;
+;       |MUXParaColuna:SaidaC1|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC1               ; work         ;
+;       |MUXParaColuna:SaidaC2|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC2               ; work         ;
+;       |MUXParaColuna:SaidaC3|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC3               ; work         ;
+;       |MUXParaColuna:SaidaC4|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC4               ; work         ;
+;       |MUXParaColuna:SaidaC5|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC5               ; work         ;
+;       |MUXParaColuna:SaidaC6|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC6               ; work         ;
+;       |MUXParaColuna:SaidaC7|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|MatrizDeLEDs:inst1|MUXParaColuna:SaidaC7               ; work         ;
+;    |RegistradorL1:instL1|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1                                   ; work         ;
+;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst10                  ; work         ;
+;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst11                  ; work         ;
+;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst12                  ; work         ;
+;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst13                  ; work         ;
+;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst14                  ; work         ;
+;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst15                  ; work         ;
+;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst16                  ; work         ;
+;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst1                   ; work         ;
+;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst2                   ; work         ;
+;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst3                   ; work         ;
+;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst4                   ; work         ;
+;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst5                   ; work         ;
+;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst6                   ; work         ;
+;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst7                   ; work         ;
+;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst8                   ; work         ;
+;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL1:instL1|FlipflopD:inst9                   ; work         ;
+;    |RegistradorL2:instL2|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2                                   ; work         ;
+;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst10                  ; work         ;
+;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst11                  ; work         ;
+;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst12                  ; work         ;
+;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst13                  ; work         ;
+;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst14                  ; work         ;
+;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst15                  ; work         ;
+;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst16                  ; work         ;
+;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst1                   ; work         ;
+;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst2                   ; work         ;
+;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst3                   ; work         ;
+;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst4                   ; work         ;
+;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst5                   ; work         ;
+;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst6                   ; work         ;
+;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst7                   ; work         ;
+;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst8                   ; work         ;
+;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL2:instL2|FlipflopD:inst9                   ; work         ;
+;    |RegistradorL4:instL4|         ; 18 (0)      ; 16           ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4                                   ; work         ;
+;       |FlipflopD:inst10|          ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst10                  ; work         ;
+;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst11                  ; work         ;
+;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst12                  ; work         ;
+;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst13                  ; work         ;
+;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst14                  ; work         ;
+;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst15                  ; work         ;
+;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst16                  ; work         ;
+;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst1                   ; work         ;
+;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst2                   ; work         ;
+;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst3                   ; work         ;
+;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst4                   ; work         ;
+;       |FlipflopD:inst5|           ; 2 (1)       ; 1            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst5                   ; work         ;
+;          |Multiplexador:mux|      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst5|Multiplexador:mux ; work         ;
+;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst6                   ; work         ;
+;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst7                   ; work         ;
+;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst8                   ; work         ;
+;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL4:instL4|FlipflopD:inst9                   ; work         ;
+;    |RegistradorL5:instL5|         ; 16 (0)      ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5                                   ; work         ;
+;       |FlipflopD:inst10|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst10                  ; work         ;
+;       |FlipflopD:inst11|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst11                  ; work         ;
+;       |FlipflopD:inst12|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst12                  ; work         ;
+;       |FlipflopD:inst13|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst13                  ; work         ;
+;       |FlipflopD:inst14|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst14                  ; work         ;
+;       |FlipflopD:inst15|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst15                  ; work         ;
+;       |FlipflopD:inst16|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst16                  ; work         ;
+;       |FlipflopD:inst1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst1                   ; work         ;
+;       |FlipflopD:inst2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst2                   ; work         ;
+;       |FlipflopD:inst3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst3                   ; work         ;
+;       |FlipflopD:inst4|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst4                   ; work         ;
+;       |FlipflopD:inst5|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst5                   ; work         ;
+;       |FlipflopD:inst6|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst6                   ; work         ;
+;       |FlipflopD:inst7|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst7                   ; work         ;
+;       |FlipflopD:inst8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst8                   ; work         ;
+;       |FlipflopD:inst9|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Letreiro|RegistradorL5:instL5|FlipflopD:inst9                   ; work         ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1259,7 +1260,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sat Apr 15 17:52:52 2023
+    Info: Processing started: Mon Apr 17 23:39:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Letreiro -c Letreiro
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file letreiro.v
@@ -1296,7 +1297,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file divisor
     Info (12023): Found entity 1: DivisorDeFrequencia
 Info (12021): Found 1 design units, including 1 entities, in source file ffd.v
     Info (12023): Found entity 1: FFD
-Warning (10236): Verilog HDL Implicit Net warning at Letreiro.v(11): created implicit net for "CLK2"
+Warning (10236): Verilog HDL Implicit Net warning at Letreiro.v(27): created implicit net for "CLK2"
 Info (12127): Elaborating entity "Letreiro" for the top level hierarchy
 Info (12128): Elaborating entity "DivisorDeFrequencia" for hierarchy "DivisorDeFrequencia:CLKpor10"
 Info (12128): Elaborating entity "FFD" for hierarchy "DivisorDeFrequencia:CLKpor10|FFD:inst1"
@@ -1308,23 +1309,23 @@ Info (12128): Elaborating entity "RegistradorL3" for hierarchy "RegistradorL3:in
 Info (12128): Elaborating entity "RegistradorL4" for hierarchy "RegistradorL4:instL4"
 Info (12128): Elaborating entity "RegistradorL5" for hierarchy "RegistradorL5:instL5"
 Info (12128): Elaborating entity "MatrizDeLEDs" for hierarchy "MatrizDeLEDs:inst1"
-Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(25): actual bit length 32 differs from formal bit length 1
-Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(26): actual bit length 32 differs from formal bit length 1
-Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(27): actual bit length 32 differs from formal bit length 1
-Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(28): actual bit length 32 differs from formal bit length 1
-Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(29): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(32): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(33): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(34): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(35): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at MatrizDeLEDs.v(36): actual bit length 32 differs from formal bit length 1
 Info (12128): Elaborating entity "Contador" for hierarchy "MatrizDeLEDs:inst1|Contador:inst1"
 Info (12128): Elaborating entity "FlipflopT" for hierarchy "MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1"
 Info (12128): Elaborating entity "MUXParaColuna" for hierarchy "MatrizDeLEDs:inst1|MUXParaColuna:SaidaC1"
 Warning (12241): 83 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (21057): Implemented 113 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 116 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 98 logic cells
+    Info (21061): Implemented 101 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 4604 megabytes
-    Info: Processing ended: Sat Apr 15 17:52:54 2023
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Mon Apr 17 23:39:06 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

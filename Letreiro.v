@@ -34,7 +34,7 @@ module Letreiro(CLK, ch0, ch1, L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7);
 	RegistradorL5 instL5(ch0, ch1, CLK2, C1L5, C2L5, C3L5, C4L5, C5L5, C6L5, C7L5);
 	
 	//Instancia da matriz de LEDs. Responsável por acionar os LEDs da matriz.
-	MatrizDeLEDs inst1(CLK, L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7,
+	MatrizDeLEDs inst1(CLK, ch0, ch1, L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7,
 							C1L1, C1L2, C1L3, C1L4, C1L5,
 							C2L1, C2L2, C2L3, C2L4, C2L5,
 							C3L1, C3L2, C3L3, C3L4, C3L5,
