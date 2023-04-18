@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/Letreiro/Letreiro.v
+source_file = 1, C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/Letreiro/db/Letreiro.cbx.xml
+design_name = Letreiro
+instance = comp, \y~I\, y, Letreiro, 1
+instance = comp, \x~I\, x, Letreiro, 1
+instance = comp, \comb~0\, comb~0, Letreiro, 1
+instance = comp, \z~I\, z, Letreiro, 1

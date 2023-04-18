@@ -1,0 +1,910 @@
+TimeQuest Timing Analyzer report for Letreiro
+Sat Apr 15 17:53:04 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'
+ 12. Setup: 'CLK'
+ 13. Setup: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
+ 14. Setup: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
+ 15. Hold: 'CLK'
+ 16. Hold: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
+ 17. Hold: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
+ 18. Hold: 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'
+ 19. Minimum Pulse Width: 'CLK'
+ 20. Minimum Pulse Width: 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'
+ 21. Minimum Pulse Width: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
+ 22. Minimum Pulse Width: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
+ 23. Setup Times
+ 24. Hold Times
+ 25. Clock to Output Times
+ 26. Minimum Clock to Output Times
+ 27. Setup Transfers
+ 28. Hold Transfers
+ 29. Report TCCS
+ 30. Report RSKM
+ 31. Unconstrained Paths
+ 32. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; Letreiro                                           ;
+; Device Family      ; MAX II                                             ;
+; Device Name        ; EPM240T100C5                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Slow Model                                         ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                   ;
++-----------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------------------------+
+; Clock Name                                          ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                                 ;
++-----------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------------------------+
+; CLK                                                 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK }                                                 ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DivisorDeFrequencia:CLKpor10|FFD:inst10|Q }           ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q } ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q } ;
++-----------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fmax Summary                                                                                                                                       ;
++------------+-----------------+-----------------------------------------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                                          ; Note                                                          ;
++------------+-----------------+-----------------------------------------------------+---------------------------------------------------------------+
+; 330.03 MHz ; 330.03 MHz      ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;                                                               ;
+; 450.65 MHz ; 304.04 MHz      ; CLK                                                 ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 455.79 MHz ; 455.79 MHz      ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;                                                               ;
++------------+-----------------+-----------------------------------------------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------------------------------------------+
+; Setup Summary                                                                ;
++-----------------------------------------------------+--------+---------------+
+; Clock                                               ; Slack  ; End Point TNS ;
++-----------------------------------------------------+--------+---------------+
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; -2.030 ; -100.718      ;
+; CLK                                                 ; -1.219 ; -9.591        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; -1.194 ; -1.194        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 0.949  ; 0.000         ;
++-----------------------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Summary                                                                 ;
++-----------------------------------------------------+--------+---------------+
+; Clock                                               ; Slack  ; End Point TNS ;
++-----------------------------------------------------+--------+---------------+
+; CLK                                                 ; -2.084 ; -4.142        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; -1.003 ; -1.003        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 1.640  ; 0.000         ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 1.659  ; 0.000         ;
++-----------------------------------------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++------------------------------------------------------------------------------+
+; Minimum Pulse Width Summary                                                  ;
++-----------------------------------------------------+--------+---------------+
+; Clock                                               ; Slack  ; End Point TNS ;
++-----------------------------------------------------+--------+---------------+
+; CLK                                                 ; -2.289 ; -2.289        ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 0.234  ; 0.000         ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 0.234  ; 0.000         ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 0.234  ; 0.000         ;
++-----------------------------------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'                                                                                                                                                                          ;
++--------+-----------------------------------------+-----------------------------------------+-------------------------------------------+-------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                              ; Latch Clock                               ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-------------------------------------------+-------------------------------------------+--------------+------------+------------+
+; -2.030 ; RegistradorL5:instL5|FlipflopD:inst12|Q ; RegistradorL5:instL5|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.697      ;
+; -2.028 ; RegistradorL5:instL5|FlipflopD:inst12|Q ; RegistradorL5:instL5|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.695      ;
+; -1.847 ; RegistradorL5:instL5|FlipflopD:inst11|Q ; RegistradorL5:instL5|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.514      ;
+; -1.797 ; RegistradorL2:instL2|FlipflopD:inst8|Q  ; RegistradorL2:instL2|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.464      ;
+; -1.722 ; RegistradorL2:instL2|FlipflopD:inst16|Q ; RegistradorL2:instL2|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.389      ;
+; -1.717 ; RegistradorL4:instL4|FlipflopD:inst13|Q ; RegistradorL4:instL4|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.384      ;
+; -1.716 ; RegistradorL2:instL2|FlipflopD:inst15|Q ; RegistradorL2:instL2|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.383      ;
+; -1.716 ; RegistradorL2:instL2|FlipflopD:inst3|Q  ; RegistradorL2:instL2|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.383      ;
+; -1.711 ; RegistradorL1:instL1|FlipflopD:inst15|Q ; RegistradorL1:instL1|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.378      ;
+; -1.708 ; RegistradorL1:instL1|FlipflopD:inst7|Q  ; RegistradorL1:instL1|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.375      ;
+; -1.689 ; RegistradorL5:instL5|FlipflopD:inst7|Q  ; RegistradorL5:instL5|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.356      ;
+; -1.640 ; RegistradorL1:instL1|FlipflopD:inst1|Q  ; RegistradorL1:instL1|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.307      ;
+; -1.624 ; RegistradorL4:instL4|FlipflopD:inst16|Q ; RegistradorL4:instL4|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.291      ;
+; -1.620 ; RegistradorL4:instL4|FlipflopD:inst7|Q  ; RegistradorL4:instL4|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.287      ;
+; -1.614 ; RegistradorL5:instL5|FlipflopD:inst7|Q  ; RegistradorL5:instL5|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.281      ;
+; -1.610 ; RegistradorL2:instL2|FlipflopD:inst9|Q  ; RegistradorL2:instL2|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.277      ;
+; -1.607 ; RegistradorL5:instL5|FlipflopD:inst6|Q  ; RegistradorL5:instL5|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.274      ;
+; -1.606 ; RegistradorL1:instL1|FlipflopD:inst7|Q  ; RegistradorL1:instL1|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.273      ;
+; -1.604 ; RegistradorL1:instL1|FlipflopD:inst13|Q ; RegistradorL1:instL1|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.271      ;
+; -1.603 ; RegistradorL5:instL5|FlipflopD:inst1|Q  ; RegistradorL5:instL5|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.270      ;
+; -1.601 ; RegistradorL1:instL1|FlipflopD:inst16|Q ; RegistradorL1:instL1|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.268      ;
+; -1.595 ; RegistradorL5:instL5|FlipflopD:inst16|Q ; RegistradorL5:instL5|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.262      ;
+; -1.593 ; RegistradorL2:instL2|FlipflopD:inst12|Q ; RegistradorL2:instL2|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.260      ;
+; -1.593 ; RegistradorL5:instL5|FlipflopD:inst15|Q ; RegistradorL5:instL5|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.260      ;
+; -1.591 ; RegistradorL2:instL2|FlipflopD:inst3|Q  ; RegistradorL2:instL2|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.258      ;
+; -1.590 ; RegistradorL2:instL2|FlipflopD:inst8|Q  ; RegistradorL2:instL2|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.257      ;
+; -1.582 ; RegistradorL4:instL4|FlipflopD:inst1|Q  ; RegistradorL4:instL4|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.249      ;
+; -1.577 ; RegistradorL1:instL1|FlipflopD:inst6|Q  ; RegistradorL1:instL1|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.244      ;
+; -1.577 ; RegistradorL2:instL2|FlipflopD:inst2|Q  ; RegistradorL2:instL2|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.244      ;
+; -1.565 ; RegistradorL4:instL4|FlipflopD:inst6|Q  ; RegistradorL4:instL4|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.232      ;
+; -1.519 ; RegistradorL1:instL1|FlipflopD:inst8|Q  ; RegistradorL1:instL1|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.186      ;
+; -1.518 ; RegistradorL1:instL1|FlipflopD:inst12|Q ; RegistradorL1:instL1|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.185      ;
+; -1.518 ; RegistradorL1:instL1|FlipflopD:inst8|Q  ; RegistradorL1:instL1|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.185      ;
+; -1.518 ; RegistradorL4:instL4|FlipflopD:inst8|Q  ; RegistradorL4:instL4|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.185      ;
+; -1.518 ; RegistradorL4:instL4|FlipflopD:inst5|Q  ; RegistradorL4:instL4|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.185      ;
+; -1.516 ; RegistradorL4:instL4|FlipflopD:inst12|Q ; RegistradorL4:instL4|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.183      ;
+; -1.516 ; RegistradorL4:instL4|FlipflopD:inst8|Q  ; RegistradorL4:instL4|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.183      ;
+; -1.516 ; RegistradorL4:instL4|FlipflopD:inst5|Q  ; RegistradorL4:instL4|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.183      ;
+; -1.514 ; RegistradorL1:instL1|FlipflopD:inst12|Q ; RegistradorL1:instL1|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.181      ;
+; -1.514 ; RegistradorL4:instL4|FlipflopD:inst9|Q  ; RegistradorL4:instL4|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.181      ;
+; -1.513 ; RegistradorL1:instL1|FlipflopD:inst11|Q ; RegistradorL1:instL1|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.180      ;
+; -1.512 ; RegistradorL4:instL4|FlipflopD:inst9|Q  ; RegistradorL4:instL4|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.179      ;
+; -1.512 ; RegistradorL1:instL1|FlipflopD:inst11|Q ; RegistradorL1:instL1|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.179      ;
+; -1.510 ; RegistradorL4:instL4|FlipflopD:inst12|Q ; RegistradorL4:instL4|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.177      ;
+; -1.506 ; RegistradorL1:instL1|FlipflopD:inst2|Q  ; RegistradorL1:instL1|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.173      ;
+; -1.505 ; RegistradorL4:instL4|FlipflopD:inst6|Q  ; RegistradorL4:instL4|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.172      ;
+; -1.505 ; RegistradorL5:instL5|FlipflopD:inst2|Q  ; RegistradorL5:instL5|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.172      ;
+; -1.504 ; RegistradorL2:instL2|FlipflopD:inst1|Q  ; RegistradorL2:instL2|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.171      ;
+; -1.502 ; RegistradorL2:instL2|FlipflopD:inst10|Q ; RegistradorL2:instL2|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.169      ;
+; -1.502 ; RegistradorL1:instL1|FlipflopD:inst5|Q  ; RegistradorL1:instL1|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.169      ;
+; -1.502 ; RegistradorL1:instL1|FlipflopD:inst2|Q  ; RegistradorL1:instL1|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.169      ;
+; -1.501 ; RegistradorL2:instL2|FlipflopD:inst4|Q  ; RegistradorL2:instL2|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.168      ;
+; -1.500 ; RegistradorL2:instL2|FlipflopD:inst10|Q ; RegistradorL2:instL2|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.167      ;
+; -1.500 ; RegistradorL1:instL1|FlipflopD:inst5|Q  ; RegistradorL1:instL1|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.167      ;
+; -1.500 ; RegistradorL2:instL2|FlipflopD:inst1|Q  ; RegistradorL2:instL2|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.167      ;
+; -1.499 ; RegistradorL5:instL5|FlipflopD:inst2|Q  ; RegistradorL5:instL5|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.166      ;
+; -1.496 ; RegistradorL1:instL1|FlipflopD:inst1|Q  ; RegistradorL1:instL1|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.163      ;
+; -1.494 ; RegistradorL5:instL5|FlipflopD:inst13|Q ; RegistradorL5:instL5|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.161      ;
+; -1.494 ; RegistradorL2:instL2|FlipflopD:inst4|Q  ; RegistradorL2:instL2|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.161      ;
+; -1.493 ; RegistradorL2:instL2|FlipflopD:inst11|Q ; RegistradorL2:instL2|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.160      ;
+; -1.493 ; RegistradorL5:instL5|FlipflopD:inst13|Q ; RegistradorL5:instL5|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.160      ;
+; -1.491 ; RegistradorL2:instL2|FlipflopD:inst12|Q ; RegistradorL2:instL2|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.158      ;
+; -1.491 ; RegistradorL4:instL4|FlipflopD:inst15|Q ; RegistradorL4:instL4|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.158      ;
+; -1.490 ; RegistradorL5:instL5|FlipflopD:inst8|Q  ; RegistradorL5:instL5|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.157      ;
+; -1.490 ; RegistradorL5:instL5|FlipflopD:inst5|Q  ; RegistradorL5:instL5|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.157      ;
+; -1.490 ; RegistradorL4:instL4|FlipflopD:inst2|Q  ; RegistradorL4:instL4|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.157      ;
+; -1.486 ; RegistradorL2:instL2|FlipflopD:inst11|Q ; RegistradorL2:instL2|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.153      ;
+; -1.486 ; RegistradorL4:instL4|FlipflopD:inst15|Q ; RegistradorL4:instL4|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.153      ;
+; -1.484 ; RegistradorL4:instL4|FlipflopD:inst2|Q  ; RegistradorL4:instL4|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.151      ;
+; -1.483 ; RegistradorL5:instL5|FlipflopD:inst8|Q  ; RegistradorL5:instL5|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.150      ;
+; -1.481 ; RegistradorL5:instL5|FlipflopD:inst16|Q ; RegistradorL5:instL5|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.148      ;
+; -1.481 ; RegistradorL5:instL5|FlipflopD:inst5|Q  ; RegistradorL5:instL5|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.148      ;
+; -1.481 ; RegistradorL5:instL5|FlipflopD:inst6|Q  ; RegistradorL5:instL5|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.148      ;
+; -1.480 ; RegistradorL4:instL4|FlipflopD:inst16|Q ; RegistradorL4:instL4|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.147      ;
+; -1.480 ; RegistradorL5:instL5|FlipflopD:inst15|Q ; RegistradorL5:instL5|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.147      ;
+; -1.480 ; RegistradorL4:instL4|FlipflopD:inst1|Q  ; RegistradorL4:instL4|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.147      ;
+; -1.477 ; RegistradorL2:instL2|FlipflopD:inst7|Q  ; RegistradorL2:instL2|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.144      ;
+; -1.475 ; RegistradorL5:instL5|FlipflopD:inst1|Q  ; RegistradorL5:instL5|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.142      ;
+; -1.474 ; RegistradorL2:instL2|FlipflopD:inst7|Q  ; RegistradorL2:instL2|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.141      ;
+; -1.473 ; RegistradorL2:instL2|FlipflopD:inst2|Q  ; RegistradorL2:instL2|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.140      ;
+; -1.466 ; RegistradorL1:instL1|FlipflopD:inst13|Q ; RegistradorL1:instL1|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.133      ;
+; -1.465 ; RegistradorL1:instL1|FlipflopD:inst16|Q ; RegistradorL1:instL1|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.132      ;
+; -1.453 ; RegistradorL1:instL1|FlipflopD:inst6|Q  ; RegistradorL1:instL1|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 2.120      ;
+; -1.269 ; RegistradorL4:instL4|FlipflopD:inst4|Q  ; RegistradorL4:instL4|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.936      ;
+; -1.266 ; RegistradorL4:instL4|FlipflopD:inst4|Q  ; RegistradorL4:instL4|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.933      ;
+; -1.263 ; RegistradorL4:instL4|FlipflopD:inst3|Q  ; RegistradorL4:instL4|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.930      ;
+; -1.258 ; RegistradorL4:instL4|FlipflopD:inst3|Q  ; RegistradorL4:instL4|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.925      ;
+; -1.257 ; RegistradorL2:instL2|FlipflopD:inst14|Q ; RegistradorL2:instL2|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.924      ;
+; -1.255 ; RegistradorL2:instL2|FlipflopD:inst5|Q  ; RegistradorL2:instL2|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.922      ;
+; -1.253 ; RegistradorL2:instL2|FlipflopD:inst15|Q ; RegistradorL2:instL2|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.920      ;
+; -1.252 ; RegistradorL2:instL2|FlipflopD:inst5|Q  ; RegistradorL2:instL2|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.919      ;
+; -1.250 ; RegistradorL1:instL1|FlipflopD:inst9|Q  ; RegistradorL1:instL1|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.917      ;
+; -1.249 ; RegistradorL2:instL2|FlipflopD:inst16|Q ; RegistradorL2:instL2|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.916      ;
+; -1.248 ; RegistradorL2:instL2|FlipflopD:inst14|Q ; RegistradorL2:instL2|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.915      ;
+; -1.247 ; RegistradorL1:instL1|FlipflopD:inst9|Q  ; RegistradorL1:instL1|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.914      ;
+; -1.246 ; RegistradorL1:instL1|FlipflopD:inst10|Q ; RegistradorL1:instL1|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.913      ;
+; -1.246 ; RegistradorL2:instL2|FlipflopD:inst6|Q  ; RegistradorL2:instL2|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.913      ;
+; -1.244 ; RegistradorL4:instL4|FlipflopD:inst11|Q ; RegistradorL4:instL4|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.911      ;
+; -1.244 ; RegistradorL1:instL1|FlipflopD:inst10|Q ; RegistradorL1:instL1|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.911      ;
+; -1.244 ; RegistradorL1:instL1|FlipflopD:inst14|Q ; RegistradorL1:instL1|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 1.000        ; 0.000      ; 1.911      ;
++--------+-----------------------------------------+-----------------------------------------+-------------------------------------------+-------------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLK'                                                                                                                                                                                                                    ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                                             ; Launch Clock                                        ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-------------+--------------+------------+------------+
+; -1.219 ; DivisorDeFrequencia:CLKpor10|FFD:inst4|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst5|Q            ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.886      ;
+; -1.217 ; DivisorDeFrequencia:CLKpor10|FFD:inst9|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.884      ;
+; -1.206 ; DivisorDeFrequencia:CLKpor10|FFD:inst7|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst8|Q            ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.873      ;
+; -1.204 ; DivisorDeFrequencia:CLKpor10|FFD:inst3|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst4|Q            ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.871      ;
+; -0.955 ; DivisorDeFrequencia:CLKpor10|FFD:inst2|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst3|Q            ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.622      ;
+; -0.951 ; DivisorDeFrequencia:CLKpor10|FFD:inst8|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst9|Q            ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.618      ;
+; -0.947 ; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst2|Q            ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.614      ;
+; -0.946 ; DivisorDeFrequencia:CLKpor10|FFD:inst6|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst7|Q            ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.613      ;
+; -0.946 ; DivisorDeFrequencia:CLKpor10|FFD:inst5|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst6|Q            ; CLK                                                 ; CLK         ; 1.000        ; 0.000      ; 1.613      ;
+; 2.004  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; CLK         ; 0.500        ; 3.348      ; 1.887      ;
+; 2.030  ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; CLK         ; 0.500        ; 3.348      ; 1.861      ;
+; 2.504  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; CLK         ; 1.000        ; 3.348      ; 1.887      ;
+; 2.530  ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; CLK         ; 1.000        ; 3.348      ; 1.861      ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'                                                                                                                                                                                                            ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                                             ; Launch Clock                                        ; Latch Clock                                         ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+; -1.194 ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 1.000        ; 0.000      ; 1.861      ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'                                                                                                                                                                                                           ;
++-------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                           ; To Node                                             ; Launch Clock                                        ; Latch Clock                                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+; 0.949 ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 0.500        ; 2.386      ; 1.980      ;
+; 1.449 ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 1.000        ; 2.386      ; 1.980      ;
++-------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLK'                                                                                                                                                                                                                     ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                                             ; Launch Clock                                        ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-------------+--------------+------------+------------+
+; -2.084 ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; CLK         ; 0.000        ; 3.348      ; 1.861      ;
+; -2.058 ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; CLK         ; 0.000        ; 3.348      ; 1.887      ;
+; -1.584 ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; CLK         ; -0.500       ; 3.348      ; 1.861      ;
+; -1.558 ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; CLK         ; -0.500       ; 3.348      ; 1.887      ;
+; 1.392  ; DivisorDeFrequencia:CLKpor10|FFD:inst6|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst7|Q            ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.613      ;
+; 1.392  ; DivisorDeFrequencia:CLKpor10|FFD:inst5|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst6|Q            ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.613      ;
+; 1.393  ; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst2|Q            ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.614      ;
+; 1.397  ; DivisorDeFrequencia:CLKpor10|FFD:inst8|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst9|Q            ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.618      ;
+; 1.401  ; DivisorDeFrequencia:CLKpor10|FFD:inst2|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst3|Q            ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.622      ;
+; 1.650  ; DivisorDeFrequencia:CLKpor10|FFD:inst3|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst4|Q            ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.871      ;
+; 1.652  ; DivisorDeFrequencia:CLKpor10|FFD:inst7|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst8|Q            ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.873      ;
+; 1.663  ; DivisorDeFrequencia:CLKpor10|FFD:inst9|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.884      ;
+; 1.665  ; DivisorDeFrequencia:CLKpor10|FFD:inst4|Q            ; DivisorDeFrequencia:CLKpor10|FFD:inst5|Q            ; CLK                                                 ; CLK         ; 0.000        ; 0.000      ; 1.886      ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'                                                                                                                                                                                                             ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                                             ; Launch Clock                                        ; Latch Clock                                         ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+; -1.003 ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 0.000        ; 2.386      ; 1.980      ;
+; -0.503 ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; -0.500       ; 2.386      ; 1.980      ;
++--------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'                                                                                                                                                                                                            ;
++-------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                           ; To Node                                             ; Launch Clock                                        ; Latch Clock                                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+; 1.640 ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 0.000        ; 0.000      ; 1.861      ;
++-------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'                                                                                                                                                                          ;
++-------+-----------------------------------------+-----------------------------------------+-------------------------------------------+-------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                              ; Latch Clock                               ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-------------------------------------------+-------------------------------------------+--------------+------------+------------+
+; 1.659 ; RegistradorL2:instL2|FlipflopD:inst9|Q  ; RegistradorL2:instL2|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.880      ;
+; 1.662 ; RegistradorL5:instL5|FlipflopD:inst11|Q ; RegistradorL5:instL5|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.883      ;
+; 1.662 ; RegistradorL1:instL1|FlipflopD:inst4|Q  ; RegistradorL1:instL1|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.883      ;
+; 1.662 ; RegistradorL1:instL1|FlipflopD:inst3|Q  ; RegistradorL1:instL1|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.883      ;
+; 1.662 ; RegistradorL1:instL1|FlipflopD:inst4|Q  ; RegistradorL1:instL1|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.883      ;
+; 1.663 ; RegistradorL1:instL1|FlipflopD:inst3|Q  ; RegistradorL1:instL1|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.884      ;
+; 1.669 ; RegistradorL2:instL2|FlipflopD:inst13|Q ; RegistradorL2:instL2|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.890      ;
+; 1.669 ; RegistradorL5:instL5|FlipflopD:inst9|Q  ; RegistradorL5:instL5|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.890      ;
+; 1.674 ; RegistradorL5:instL5|FlipflopD:inst9|Q  ; RegistradorL5:instL5|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.895      ;
+; 1.675 ; RegistradorL2:instL2|FlipflopD:inst13|Q ; RegistradorL2:instL2|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.896      ;
+; 1.678 ; RegistradorL5:instL5|FlipflopD:inst10|Q ; RegistradorL5:instL5|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.899      ;
+; 1.678 ; RegistradorL4:instL4|FlipflopD:inst10|Q ; RegistradorL4:instL4|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.899      ;
+; 1.678 ; RegistradorL5:instL5|FlipflopD:inst4|Q  ; RegistradorL5:instL5|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.899      ;
+; 1.678 ; RegistradorL5:instL5|FlipflopD:inst3|Q  ; RegistradorL5:instL5|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.899      ;
+; 1.679 ; RegistradorL4:instL4|FlipflopD:inst14|Q ; RegistradorL4:instL4|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.900      ;
+; 1.679 ; RegistradorL5:instL5|FlipflopD:inst3|Q  ; RegistradorL5:instL5|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.900      ;
+; 1.680 ; RegistradorL4:instL4|FlipflopD:inst14|Q ; RegistradorL4:instL4|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.901      ;
+; 1.681 ; RegistradorL5:instL5|FlipflopD:inst14|Q ; RegistradorL5:instL5|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.902      ;
+; 1.682 ; RegistradorL4:instL4|FlipflopD:inst10|Q ; RegistradorL4:instL4|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.903      ;
+; 1.684 ; RegistradorL4:instL4|FlipflopD:inst13|Q ; RegistradorL4:instL4|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.905      ;
+; 1.684 ; RegistradorL5:instL5|FlipflopD:inst10|Q ; RegistradorL5:instL5|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.905      ;
+; 1.685 ; RegistradorL5:instL5|FlipflopD:inst4|Q  ; RegistradorL5:instL5|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.906      ;
+; 1.686 ; RegistradorL4:instL4|FlipflopD:inst7|Q  ; RegistradorL4:instL4|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.907      ;
+; 1.687 ; RegistradorL5:instL5|FlipflopD:inst14|Q ; RegistradorL5:instL5|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.908      ;
+; 1.688 ; RegistradorL1:instL1|FlipflopD:inst14|Q ; RegistradorL1:instL1|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.909      ;
+; 1.688 ; RegistradorL4:instL4|FlipflopD:inst11|Q ; RegistradorL4:instL4|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.909      ;
+; 1.688 ; RegistradorL1:instL1|FlipflopD:inst15|Q ; RegistradorL1:instL1|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.909      ;
+; 1.688 ; RegistradorL2:instL2|FlipflopD:inst6|Q  ; RegistradorL2:instL2|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.909      ;
+; 1.690 ; RegistradorL4:instL4|FlipflopD:inst11|Q ; RegistradorL4:instL4|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.911      ;
+; 1.690 ; RegistradorL1:instL1|FlipflopD:inst10|Q ; RegistradorL1:instL1|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.911      ;
+; 1.690 ; RegistradorL1:instL1|FlipflopD:inst14|Q ; RegistradorL1:instL1|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.911      ;
+; 1.692 ; RegistradorL1:instL1|FlipflopD:inst10|Q ; RegistradorL1:instL1|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.913      ;
+; 1.692 ; RegistradorL2:instL2|FlipflopD:inst6|Q  ; RegistradorL2:instL2|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.913      ;
+; 1.693 ; RegistradorL1:instL1|FlipflopD:inst9|Q  ; RegistradorL1:instL1|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.914      ;
+; 1.694 ; RegistradorL2:instL2|FlipflopD:inst14|Q ; RegistradorL2:instL2|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.915      ;
+; 1.695 ; RegistradorL2:instL2|FlipflopD:inst16|Q ; RegistradorL2:instL2|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.916      ;
+; 1.696 ; RegistradorL1:instL1|FlipflopD:inst9|Q  ; RegistradorL1:instL1|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.917      ;
+; 1.698 ; RegistradorL2:instL2|FlipflopD:inst5|Q  ; RegistradorL2:instL2|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.919      ;
+; 1.699 ; RegistradorL2:instL2|FlipflopD:inst15|Q ; RegistradorL2:instL2|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.920      ;
+; 1.701 ; RegistradorL2:instL2|FlipflopD:inst5|Q  ; RegistradorL2:instL2|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.922      ;
+; 1.703 ; RegistradorL2:instL2|FlipflopD:inst14|Q ; RegistradorL2:instL2|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.924      ;
+; 1.704 ; RegistradorL4:instL4|FlipflopD:inst3|Q  ; RegistradorL4:instL4|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.925      ;
+; 1.709 ; RegistradorL4:instL4|FlipflopD:inst3|Q  ; RegistradorL4:instL4|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.930      ;
+; 1.712 ; RegistradorL4:instL4|FlipflopD:inst4|Q  ; RegistradorL4:instL4|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.933      ;
+; 1.715 ; RegistradorL4:instL4|FlipflopD:inst4|Q  ; RegistradorL4:instL4|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 1.936      ;
+; 1.899 ; RegistradorL1:instL1|FlipflopD:inst6|Q  ; RegistradorL1:instL1|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.120      ;
+; 1.911 ; RegistradorL1:instL1|FlipflopD:inst16|Q ; RegistradorL1:instL1|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.132      ;
+; 1.912 ; RegistradorL1:instL1|FlipflopD:inst13|Q ; RegistradorL1:instL1|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.133      ;
+; 1.919 ; RegistradorL2:instL2|FlipflopD:inst2|Q  ; RegistradorL2:instL2|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.140      ;
+; 1.920 ; RegistradorL2:instL2|FlipflopD:inst7|Q  ; RegistradorL2:instL2|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.141      ;
+; 1.921 ; RegistradorL5:instL5|FlipflopD:inst1|Q  ; RegistradorL5:instL5|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.142      ;
+; 1.923 ; RegistradorL2:instL2|FlipflopD:inst7|Q  ; RegistradorL2:instL2|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.144      ;
+; 1.926 ; RegistradorL4:instL4|FlipflopD:inst16|Q ; RegistradorL4:instL4|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.147      ;
+; 1.926 ; RegistradorL5:instL5|FlipflopD:inst15|Q ; RegistradorL5:instL5|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.147      ;
+; 1.926 ; RegistradorL4:instL4|FlipflopD:inst1|Q  ; RegistradorL4:instL4|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.147      ;
+; 1.927 ; RegistradorL5:instL5|FlipflopD:inst16|Q ; RegistradorL5:instL5|FlipflopD:inst15|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.148      ;
+; 1.927 ; RegistradorL5:instL5|FlipflopD:inst5|Q  ; RegistradorL5:instL5|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.148      ;
+; 1.927 ; RegistradorL5:instL5|FlipflopD:inst6|Q  ; RegistradorL5:instL5|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.148      ;
+; 1.929 ; RegistradorL5:instL5|FlipflopD:inst8|Q  ; RegistradorL5:instL5|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.150      ;
+; 1.930 ; RegistradorL4:instL4|FlipflopD:inst2|Q  ; RegistradorL4:instL4|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.151      ;
+; 1.932 ; RegistradorL2:instL2|FlipflopD:inst11|Q ; RegistradorL2:instL2|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.153      ;
+; 1.932 ; RegistradorL4:instL4|FlipflopD:inst15|Q ; RegistradorL4:instL4|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.153      ;
+; 1.936 ; RegistradorL5:instL5|FlipflopD:inst8|Q  ; RegistradorL5:instL5|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.157      ;
+; 1.936 ; RegistradorL5:instL5|FlipflopD:inst5|Q  ; RegistradorL5:instL5|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.157      ;
+; 1.936 ; RegistradorL4:instL4|FlipflopD:inst2|Q  ; RegistradorL4:instL4|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.157      ;
+; 1.937 ; RegistradorL2:instL2|FlipflopD:inst12|Q ; RegistradorL2:instL2|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.158      ;
+; 1.937 ; RegistradorL4:instL4|FlipflopD:inst15|Q ; RegistradorL4:instL4|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.158      ;
+; 1.939 ; RegistradorL2:instL2|FlipflopD:inst11|Q ; RegistradorL2:instL2|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.160      ;
+; 1.939 ; RegistradorL5:instL5|FlipflopD:inst13|Q ; RegistradorL5:instL5|FlipflopD:inst14|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.160      ;
+; 1.940 ; RegistradorL5:instL5|FlipflopD:inst13|Q ; RegistradorL5:instL5|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.161      ;
+; 1.940 ; RegistradorL2:instL2|FlipflopD:inst4|Q  ; RegistradorL2:instL2|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.161      ;
+; 1.942 ; RegistradorL1:instL1|FlipflopD:inst1|Q  ; RegistradorL1:instL1|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.163      ;
+; 1.945 ; RegistradorL5:instL5|FlipflopD:inst2|Q  ; RegistradorL5:instL5|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.166      ;
+; 1.946 ; RegistradorL2:instL2|FlipflopD:inst10|Q ; RegistradorL2:instL2|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.167      ;
+; 1.946 ; RegistradorL1:instL1|FlipflopD:inst5|Q  ; RegistradorL1:instL1|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.167      ;
+; 1.946 ; RegistradorL2:instL2|FlipflopD:inst1|Q  ; RegistradorL2:instL2|FlipflopD:inst2|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.167      ;
+; 1.947 ; RegistradorL2:instL2|FlipflopD:inst4|Q  ; RegistradorL2:instL2|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.168      ;
+; 1.948 ; RegistradorL2:instL2|FlipflopD:inst10|Q ; RegistradorL2:instL2|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.169      ;
+; 1.948 ; RegistradorL1:instL1|FlipflopD:inst5|Q  ; RegistradorL1:instL1|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.169      ;
+; 1.948 ; RegistradorL1:instL1|FlipflopD:inst2|Q  ; RegistradorL1:instL1|FlipflopD:inst3|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.169      ;
+; 1.950 ; RegistradorL2:instL2|FlipflopD:inst1|Q  ; RegistradorL2:instL2|FlipflopD:inst16|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.171      ;
+; 1.951 ; RegistradorL4:instL4|FlipflopD:inst6|Q  ; RegistradorL4:instL4|FlipflopD:inst5|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.172      ;
+; 1.951 ; RegistradorL5:instL5|FlipflopD:inst2|Q  ; RegistradorL5:instL5|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.172      ;
+; 1.952 ; RegistradorL1:instL1|FlipflopD:inst2|Q  ; RegistradorL1:instL1|FlipflopD:inst1|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.173      ;
+; 1.956 ; RegistradorL4:instL4|FlipflopD:inst12|Q ; RegistradorL4:instL4|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.177      ;
+; 1.958 ; RegistradorL4:instL4|FlipflopD:inst9|Q  ; RegistradorL4:instL4|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.179      ;
+; 1.958 ; RegistradorL1:instL1|FlipflopD:inst11|Q ; RegistradorL1:instL1|FlipflopD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.179      ;
+; 1.959 ; RegistradorL1:instL1|FlipflopD:inst11|Q ; RegistradorL1:instL1|FlipflopD:inst12|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.180      ;
+; 1.960 ; RegistradorL1:instL1|FlipflopD:inst12|Q ; RegistradorL1:instL1|FlipflopD:inst11|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.181      ;
+; 1.960 ; RegistradorL4:instL4|FlipflopD:inst9|Q  ; RegistradorL4:instL4|FlipflopD:inst8|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.181      ;
+; 1.962 ; RegistradorL4:instL4|FlipflopD:inst12|Q ; RegistradorL4:instL4|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.183      ;
+; 1.962 ; RegistradorL4:instL4|FlipflopD:inst8|Q  ; RegistradorL4:instL4|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.183      ;
+; 1.962 ; RegistradorL4:instL4|FlipflopD:inst5|Q  ; RegistradorL4:instL4|FlipflopD:inst6|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.183      ;
+; 1.964 ; RegistradorL1:instL1|FlipflopD:inst12|Q ; RegistradorL1:instL1|FlipflopD:inst13|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.185      ;
+; 1.964 ; RegistradorL1:instL1|FlipflopD:inst8|Q  ; RegistradorL1:instL1|FlipflopD:inst9|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.185      ;
+; 1.964 ; RegistradorL4:instL4|FlipflopD:inst8|Q  ; RegistradorL4:instL4|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.185      ;
+; 1.964 ; RegistradorL4:instL4|FlipflopD:inst5|Q  ; RegistradorL4:instL4|FlipflopD:inst4|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.185      ;
+; 1.965 ; RegistradorL1:instL1|FlipflopD:inst8|Q  ; RegistradorL1:instL1|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.186      ;
+; 2.011 ; RegistradorL4:instL4|FlipflopD:inst6|Q  ; RegistradorL4:instL4|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.232      ;
+; 2.023 ; RegistradorL1:instL1|FlipflopD:inst6|Q  ; RegistradorL1:instL1|FlipflopD:inst7|Q  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 0.000        ; 0.000      ; 2.244      ;
++-------+-----------------------------------------+-----------------------------------------+-------------------------------------------+-------------------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'CLK'                                                                                                           ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                              ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; CLK   ; Rise       ; CLK                                                 ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst1|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst2|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst2|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst3|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst3|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst4|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst4|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst5|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst5|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst6|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst6|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst7|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst7|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst8|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst8|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst9|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst9|Q            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; CLK   ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; CLK   ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst10|Q|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst10|Q|clk                               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst1|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst1|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst2|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst2|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst3|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst3|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst4|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst4|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst5|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst5|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst6|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst6|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst7|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst7|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst8|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst8|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLKpor10|inst9|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLKpor10|inst9|Q|clk                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK|combout                                         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK|combout                                         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst1|inst1|Q|clk                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst1|inst1|Q|clk                             ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'                                                                                            ;
++-------+--------------+----------------+------------------+-------------------------------------------+------------+-----------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                                     ; Clock Edge ; Target                                  ;
++-------+--------------+----------------+------------------+-------------------------------------------+------------+-----------------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst10|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst10|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst11|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst11|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst12|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst12|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst13|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst13|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst14|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst14|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst15|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst15|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst16|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst16|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst1|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst1|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst2|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst2|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst3|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst3|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst4|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst4|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst5|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst5|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst6|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst6|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst7|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst7|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst8|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst8|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst9|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL1:instL1|FlipflopD:inst9|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst10|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst10|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst11|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst11|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst12|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst12|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst13|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst13|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst14|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst14|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst15|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst15|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst16|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst16|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst1|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst1|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst2|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst2|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst3|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst3|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst4|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst4|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst5|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst5|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst6|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst6|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst7|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst7|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst8|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst8|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst9|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL2:instL2|FlipflopD:inst9|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst10|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst10|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst11|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst11|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst12|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst12|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst13|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst13|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst14|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst14|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst15|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst15|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst16|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst16|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst1|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst1|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst2|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst2|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst3|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst3|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst4|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst4|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst5|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst5|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst6|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst6|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst7|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst7|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst8|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst8|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst9|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL4:instL4|FlipflopD:inst9|Q  ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL5:instL5|FlipflopD:inst10|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL5:instL5|FlipflopD:inst10|Q ;
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL5:instL5|FlipflopD:inst11|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; Rise       ; RegistradorL5:instL5|FlipflopD:inst11|Q ;
++-------+--------------+----------------+------------------+-------------------------------------------+------------+-----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'                                                                                                        ;
++-------+--------------+----------------+------------------+-----------------------------------------------------+------------+-----------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                                               ; Clock Edge ; Target                                              ;
++-------+--------------+----------------+------------------+-----------------------------------------------------+------------+-----------------------------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; Rise       ; inst1|inst1|inst1|Q|regout                          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; Rise       ; inst1|inst1|inst1|Q|regout                          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; Rise       ; inst1|inst1|inst2|Q|clk                             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; Rise       ; inst1|inst1|inst2|Q|clk                             ;
++-------+--------------+----------------+------------------+-----------------------------------------------------+------------+-----------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'                                                                                                        ;
++-------+--------------+----------------+------------------+-----------------------------------------------------+------------+-----------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                                               ; Clock Edge ; Target                                              ;
++-------+--------------+----------------+------------------+-----------------------------------------------------+------------+-----------------------------------------------------+
+; 0.234 ; 0.500        ; 0.266          ; High Pulse Width ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3|Q ;
+; 0.234 ; 0.500        ; 0.266          ; Low Pulse Width  ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst3|Q ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; Rise       ; inst1|inst1|inst2|Q|regout                          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; Rise       ; inst1|inst1|inst2|Q|regout                          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; Rise       ; inst1|inst1|inst3|Q|clk                             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; Rise       ; inst1|inst1|inst3|Q|clk                             ;
++-------+--------------+----------------+------------------+-----------------------------------------------------+------------+-----------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                                                    ;
++-----------+-------------------------------------------+-------+-------+------------+-------------------------------------------+
+; Data Port ; Clock Port                                ; Rise  ; Fall  ; Clock Edge ; Clock Reference                           ;
++-----------+-------------------------------------------+-------+-------+------------+-------------------------------------------+
+; ch0       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 7.504 ; 7.504 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ;
+; ch1       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; 6.498 ; 6.498 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ;
++-----------+-------------------------------------------+-------+-------+------------+-------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                                                       ;
++-----------+-------------------------------------------+--------+--------+------------+-------------------------------------------+
+; Data Port ; Clock Port                                ; Rise   ; Fall   ; Clock Edge ; Clock Reference                           ;
++-----------+-------------------------------------------+--------+--------+------------+-------------------------------------------+
+; ch0       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; -1.979 ; -1.979 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ;
+; ch1       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ; -2.341 ; -2.341 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q ;
++-----------+-------------------------------------------+--------+--------+------------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                                                                ;
++-----------+-----------------------------------------------------+--------+--------+------------+-----------------------------------------------------+
+; Data Port ; Clock Port                                          ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                     ;
++-----------+-----------------------------------------------------+--------+--------+------------+-----------------------------------------------------+
+; C1        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 12.236 ; 12.236 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C2        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 12.382 ; 12.382 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C3        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 14.392 ; 14.392 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C4        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 13.064 ; 13.064 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C5        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 13.714 ; 13.714 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C6        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 12.704 ; 12.704 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C7        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 12.696 ; 12.696 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 9.827  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 9.601  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 10.389 ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 11.397 ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 11.332 ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C6        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 10.552 ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C7        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 9.879  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.799  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.990  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.791  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.937  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.791  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 9.827  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 9.601  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 10.389 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 11.397 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 11.332 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C6        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 10.552 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C7        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 9.879  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.799  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.990  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.791  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.937  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.791  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 12.403 ; 12.403 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 12.177 ; 12.177 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 12.945 ; 12.945 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 13.953 ; 13.953 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 13.908 ; 13.908 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C6        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 13.108 ; 13.108 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C7        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 12.435 ; 12.435 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.375  ; 8.375  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.566  ; 8.566  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.358  ; 8.358  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.493  ; 8.493  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.367  ; 8.367  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 10.050 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 9.824  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 10.281 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 11.482 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 11.555 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C6        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 10.652 ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C7        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 9.539  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.023  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.213  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.009  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.153  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.015  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
++-----------+-----------------------------------------------------+--------+--------+------------+-----------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                                                        ;
++-----------+-----------------------------------------------------+--------+--------+------------+-----------------------------------------------------+
+; Data Port ; Clock Port                                          ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                     ;
++-----------+-----------------------------------------------------+--------+--------+------------+-----------------------------------------------------+
+; C1        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 10.317 ; 10.317 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C2        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 9.808  ; 9.808  ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C3        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 9.943  ; 9.943  ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C4        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 9.421  ; 9.421  ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C5        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 9.626  ; 9.626  ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C6        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 9.594  ; 9.594  ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C7        ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 11.456 ; 11.456 ; Rise       ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ;
+; C1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 8.297  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 8.738  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 8.683  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 8.373  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 8.555  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C6        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 8.527  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C7        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 8.732  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.799  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.990  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.791  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.937  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 5.791  ;        ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 8.297  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 8.738  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 8.683  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 8.373  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 8.555  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C6        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 8.527  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C7        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 8.732  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.799  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.990  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.791  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.937  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; L5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;        ; 5.791  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ;
+; C1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.513  ; 10.853 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.954  ; 11.294 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.899  ; 11.239 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.589  ; 10.929 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.771  ; 11.111 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C6        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.743  ; 11.083 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C7        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 8.948  ; 11.288 ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 6.023  ; 8.375  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 6.213  ; 8.566  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 6.009  ; 8.358  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 6.153  ; 8.493  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 6.015  ; 8.367  ; Rise       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 8.513  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 8.954  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 8.899  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 8.589  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 8.771  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C6        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 8.743  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; C7        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 8.948  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L1        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.023  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L2        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.213  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L3        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.009  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L4        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.153  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
+; L5        ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;        ; 6.015  ; Fall       ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ;
++-----------+-----------------------------------------------------+--------+--------+------------+-----------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                                       ;
++-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                          ; To Clock                                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
+; CLK                                                 ; CLK                                                 ; 9        ; 0        ; 0        ; 0        ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; CLK                                                 ; 1        ; 1        ; 0        ; 0        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; CLK                                                 ; 1        ; 1        ; 0        ; 0        ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 128      ; 0        ; 0        ; 0        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 1        ; 1        ; 0        ; 0        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 1        ; 0        ; 0        ; 0        ;
++-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                                        ;
++-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                          ; To Clock                                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
+; CLK                                                 ; CLK                                                 ; 9        ; 0        ; 0        ; 0        ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; CLK                                                 ; 1        ; 1        ; 0        ; 0        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; CLK                                                 ; 1        ; 1        ; 0        ; 0        ;
+; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; DivisorDeFrequencia:CLKpor10|FFD:inst10|Q           ; 128      ; 0        ; 0        ; 0        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q ; 1        ; 1        ; 0        ; 0        ;
+; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q ; 1        ; 0        ; 0        ; 0        ;
++-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 128   ; 128  ;
+; Unconstrained Output Ports      ; 12    ; 12   ;
+; Unconstrained Output Port Paths ; 64    ; 64   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sat Apr 15 17:53:03 2023
+Info: Command: quartus_sta Letreiro -c Letreiro
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Letreiro.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q
+    Info (332105): create_clock -period 1.000 -name CLK CLK
+    Info (332105): create_clock -period 1.000 -name MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q
+    Info (332105): create_clock -period 1.000 -name DivisorDeFrequencia:CLKpor10|FFD:inst10|Q DivisorDeFrequencia:CLKpor10|FFD:inst10|Q
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.030
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.030            -100.718 DivisorDeFrequencia:CLKpor10|FFD:inst10|Q 
+    Info (332119):    -1.219              -9.591 CLK 
+    Info (332119):    -1.194              -1.194 MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q 
+    Info (332119):     0.949               0.000 MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q 
+Info (332146): Worst-case hold slack is -2.084
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.084              -4.142 CLK 
+    Info (332119):    -1.003              -1.003 MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q 
+    Info (332119):     1.640               0.000 MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q 
+    Info (332119):     1.659               0.000 DivisorDeFrequencia:CLKpor10|FFD:inst10|Q 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 CLK 
+    Info (332119):     0.234               0.000 DivisorDeFrequencia:CLKpor10|FFD:inst10|Q 
+    Info (332119):     0.234               0.000 MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q 
+    Info (332119):     0.234               0.000 MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4590 megabytes
+    Info: Processing ended: Sat Apr 15 17:53:04 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

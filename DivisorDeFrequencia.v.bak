@@ -1,0 +1,5 @@
+module DivisorDeFrequencia(CLK, Q);
+
+
+
+endmodule
