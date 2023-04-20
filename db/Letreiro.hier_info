@@ -14,39 +14,182 @@ C4 << MatrizDeLEDs:inst1.port11
 C5 << MatrizDeLEDs:inst1.port12
 C6 << MatrizDeLEDs:inst1.port13
 C7 << MatrizDeLEDs:inst1.port14
-rele << CLK2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|letreiro|divisor:inst
-clk => count[0].CLK
-clk => count[1].CLK
-clk => count[2].CLK
-clk => count[3].CLK
-clk => count[4].CLK
-clk => count[5].CLK
-clk => count[6].CLK
-clk => count[7].CLK
-clk => count[8].CLK
-clk => count[9].CLK
-clk => count[10].CLK
-clk => count[11].CLK
-clk => count[12].CLK
-clk => count[13].CLK
-clk => count[14].CLK
-clk => count[15].CLK
-clk => count[16].CLK
-clk => count[17].CLK
-clk => count[18].CLK
-clk => count[19].CLK
-clk => count[20].CLK
-clk => count[21].CLK
-clk => count[22].CLK
-clk => count[23].CLK
-clk => count[24].CLK
-clk => count[25].CLK
-clk => count[26].CLK
-clock1 <= count[5].DB_MAX_OUTPUT_PORT_TYPE
-clock2 <= count[23].DB_MAX_OUTPUT_PORT_TYPE
+|letreiro|divisorComJK:inst
+j => j.IN24
+k => k.IN24
+clk => clk.IN1
+saida1 <= saida1.DB_MAX_OUTPUT_PORT_TYPE
+saida2 <= FFJK:inst24.port3
+
+
+|letreiro|divisorComJK:inst|FFJK:inst1
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst2
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst3
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst4
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst5
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst6
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst7
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst8
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst9
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst10
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst11
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst12
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst13
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst14
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst15
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst16
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst17
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst18
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst19
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst20
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst21
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst22
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst23
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letreiro|divisorComJK:inst|FFJK:inst24
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |letreiro|RegistradorL1:instL1

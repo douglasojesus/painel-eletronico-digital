@@ -9,10 +9,9 @@ de outra autoria que não a minha está destacado com uma citação para o autor
 do código, e estou ciente que estes trechos não serão considerados para fins de avaliação.
 ******************************************************************************************/
 
-module letreiro(CLK, ch0, ch1, L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7, rele);
+module letreiro(CLK, ch0, ch1, L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7);
 
 	input CLK, ch0, ch1;
-	output rele;
 	//Saídas da matriz de LEDs. L representa linha e C representa coluna. 
 	output L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7;
 	
@@ -26,10 +25,10 @@ module letreiro(CLK, ch0, ch1, L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7, r
 	wire CLK2, CLK3;
 	/*Para haver frequências diferentes entre o acionamento da matriz e o deslocamento dos shift-registers, 
 	/é necessário dois relógios diferentes. O que será responsável pelo deslocamento precisa ter uma frequência menor.*/
-	//DivisorDeFrequencia CLKpor24(CLK, CLK2);
-	//DivisorDeFrequencia2 CLKpor5(CLK, CLK3);
-	divisor inst(CLK, CLK3, CLK2);
-	assign rele = CLK2;
+	//CLK3 -> 5
+	//CLK2 -> 24
+	divisorComJK inst(1, 1, CLK, CLK3, CLK2);
+	//divisor inst(CLK, CLK3, CLK2);
 
 	//Instancia única dos módulos Registradores. São diferentes pois cada um tem uma sequência de bits pré-definida.
 	RegistradorL1 instL1(ch0, ch1, CLK2, C1L1, C2L1, C3L1, C4L1, C5L1, C6L1, C7L1);
