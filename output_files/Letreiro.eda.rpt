@@ -1,6 +1,6 @@
-EDA Netlist Writer report for Letreiro
-Mon Apr 17 23:39:14 2023
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+EDA Netlist Writer report for letreiro
+Wed Apr 19 17:08:45 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -17,28 +17,29 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Apr 17 23:39:14 2023 ;
-; Revision Name             ; Letreiro                              ;
-; Top-level Entity Name     ; Letreiro                              ;
+; EDA Netlist Writer Status ; Successful - Wed Apr 19 17:08:45 2023 ;
+; Revision Name             ; letreiro                              ;
+; Top-level Entity Name     ; letreiro                              ;
 ; Family                    ; MAX II                                ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -50,7 +51,7 @@ applicable agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate netlist for functional simulation only                                                   ; On                        ;
+; Generate functional simulation netlist                                                            ; On                        ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -65,27 +66,28 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                       ;
-+------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                  ;
-+------------------------------------------------------------------------------------------------------------------+
-; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/simulation/qsim//Letreiro.vo ;
-+------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Simulation Generated Files                                      ;
++-----------------------------------------------------------------+
+; Generated Files                                                 ;
++-----------------------------------------------------------------+
+; /home/aluno/Documentos/letreiro/simulation/modelsim/letreiro.vo ;
++-----------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Apr 17 23:39:14 2023
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Letreiro -c Letreiro
-Info (204019): Generated file Letreiro.vo in folder "C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/LetreiroGit/simulation/qsim//" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4546 megabytes
-    Info: Processing ended: Mon Apr 17 23:39:14 2023
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Apr 19 17:08:45 2023
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off letreiro -c letreiro
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file letreiro.vo in folder "/home/aluno/Documentos/letreiro/simulation/modelsim/" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 577 megabytes
+    Info: Processing ended: Wed Apr 19 17:08:45 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

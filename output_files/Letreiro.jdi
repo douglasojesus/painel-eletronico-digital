@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="35a1e718cba984777caf"/>
+    <hash md5_digest_80b="94916938c5ee01d825c7"/>
   </project>
   <file_info>
-    <file device="EPM240T100C5" path="Letreiro.sof" usercode="0xFFFFFFFF"/>
+    <file device="EPM240T100C5" path="letreiro.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>

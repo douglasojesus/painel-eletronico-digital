@@ -1,9 +1,0 @@
-module multiplexador(ch0, ch1, entrada, saida0, saida1, saida2, saida3);
-
-input ch0, ch1, entrada;
-output saida0, saida1, saida2, saida3;
-
-and(saida0, ~ch1, ~ch0, entrada);
-and(saida1, ~ch1, ch0, entrada);
-and(saida2, ch1, ~ch0, entrada);
-and(saida3, ch1, ch0, entrada);

@@ -1,52 +1,64 @@
 ------------------------------------------------------------
-TimeQuest Timing Analyzer Summary
+Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Setup 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'
-Slack : -1.991
-TNS   : -100.315
-
 Type  : Setup 'CLK'
-Slack : -1.214
-TNS   : -9.588
+Slack : -6.620
+TNS   : -132.457
+
+Type  : Setup 'divisor:inst|count[23]'
+Slack : -1.724
+TNS   : -100.040
 
 Type  : Setup 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
-Slack : -1.194
-TNS   : -1.194
+Slack : -1.193
+TNS   : -1.193
 
 Type  : Setup 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
-Slack : 0.940
+Slack : 0.851
 TNS   : 0.000
+
+Type  : Setup 'divisor:inst|count[5]'
+Slack : 1.857
+TNS   : 0.000
+
+Type  : Hold 'divisor:inst|count[5]'
+Slack : -1.911
+TNS   : -1.911
 
 Type  : Hold 'CLK'
-Slack : -2.084
-TNS   : -4.149
+Slack : -1.429
+TNS   : -2.045
 
 Type  : Hold 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
-Slack : -0.994
-TNS   : -0.994
+Slack : -0.905
+TNS   : -0.905
 
 Type  : Hold 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
-Slack : 1.640
+Slack : 1.639
 TNS   : 0.000
 
-Type  : Hold 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'
-Slack : 1.659
+Type  : Hold 'divisor:inst|count[23]'
+Slack : 1.661
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'CLK'
 Slack : -2.289
 TNS   : -2.289
 
-Type  : Minimum Pulse Width 'DivisorDeFrequencia:CLKpor10|FFD:inst10|Q'
-Slack : 0.234
-TNS   : 0.000
-
 Type  : Minimum Pulse Width 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
 Slack : 0.234
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:inst|count[23]'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:inst|count[5]'
 Slack : 0.234
 TNS   : 0.000
 

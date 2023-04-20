@@ -48,5 +48,4 @@ C7L1, C7L2, C7L3, C7L4, C7L5);
 	MUXParaColuna SaidaC6(en1, en2, en3, C6L1, C6L2, C6L3, C6L4, C6L5, C6);
 	MUXParaColuna SaidaC7(en1, en2, en3, C7L1, C7L2, C7L3, C7L4, C7L5, C7);
 	
-	
 endmodule
