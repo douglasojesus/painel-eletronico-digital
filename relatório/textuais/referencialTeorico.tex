@@ -1,0 +1,16 @@
+\chapter{REFERENCIAL TEÓRICO}
+%Ref teorico: Divisor de frequencia, matriz de leds, registrador de deslocamento, multiplexador e demultiplexador, contador
+
+%Divisor de frequencia: https://www.maxwell.vrac.puc-rio.br/15236/15236_4.PDF
+%Dvisor de frequencia: https://www.newtoncbraga.com.br/index.php/artigos/54-dicas/4137-art566.html
+
+\section{Decodificadores e Multiplexadores}
+Antes de apresentar a descrição do código, é interessante pontuar conceitos de circuitos digitais que foram desenvolvidos no código: uso de decodificadores e multiplexadores.
+
+Um decodificador em circuitos digitais é um componente eletrônico que recebe um sinal de entrada codificado e o converte em um sinal de saída decodificado \cite{floyd}, geralmente em formato binário. Ele é utilizado para decodificar informações codificadas em diferentes formatos, tais como códigos de barras, números em formato BCD (Binary Coded Decimal), ou outras formas de codificação. O decodificador recebe um conjunto de bits de entrada e ativa uma das suas saídas correspondentes, dependendo da combinação de bits recebida. Cada saída é ativada para uma combinação específica de bits de entrada, e todas as outras saídas permanecem desativadas. O número de saídas ativas pode variar de acordo com o número de bits de entrada, mas normalmente é uma potência de dois.
+
+Para controlar um display de sete segmentos, por exemplo, é necessário um decodificador que converta o número, ou caractere, a ser exibido em uma combinação de segmentos a serem ligados. O decodificador recebe os bits de entrada e ativa as saídas correspondentes para ligar os segmentos apropriados do display \cite{tocci2010sistemas}. Por exemplo, se o número 7 for enviado ao decodificador, ele ativará as saídas correspondentes aos segmentos a, b, c para exibir o dígito 7 no display. Assim, o uso de um decodificador é fundamental para a operação de um display de sete segmentos, pois permite que os dados sejam convertidos em sinais de controle que ligam ou desligam os segmentos do display de forma adequada.
+
+O multiplexador, por sua vez, é um componente eletrônico que permite selecionar um de vários sinais de entrada e direcioná-lo para a saída \cite{floyd}. Ele é usado para economizar espaço e reduzir a complexidade em sistemas digitais, permitindo que múltiplos sinais sejam roteados para um único canal de saída. O funcionamento de um multiplexador é relativamente simples: ele possui várias entradas e uma saída única. Além disso, ele tem um ou mais sinais de controle que determinam qual das entradas deve ser selecionada e enviada para a saída. 
+
+Uma matriz de LEDs é um conjunto de LEDs organizados em linhas e colunas, formando uma matriz bidimensional. Para acender um LED específico na matriz, é necessário selecionar a linha e a coluna correspondentes e enviar um sinal para a posição desejada. O uso de um multiplexador pode simplificar o processo de controle dos LEDs na matriz. Um multiplexador pode ser usado para selecionar a linha correta. Isso pode ser feito de forma rápida e eficiente, permitindo que os LEDs sejam controlados com precisão.
