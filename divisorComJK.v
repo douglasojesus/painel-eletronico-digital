@@ -3,7 +3,7 @@ module divisorComJK(j, k, clk, saida1, saida2);
 	input k, j, clk;
 	output saida1, saida2;
 	wire s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13,
-	s14, s15, s16, s17, s18, s19, s20, s21, s22, s23;
+	s14, s15, s16, s17, s18, s19, s20, s21, s22;
 	
 	FFJK inst1(j,k,clk,s1);
 	FFJK inst2(j,k,s1,s2);
@@ -27,7 +27,6 @@ module divisorComJK(j, k, clk, saida1, saida2);
 	FFJK inst20(j,k,s19,s20);
 	FFJK inst21(j,k,s20,s21);
 	FFJK inst22(j,k,s21,s22);
-	FFJK inst23(j,k,s22,s23);
-	FFJK inst24(j,k,s23,saida2);
+	FFJK inst23(j,k,s22,saida2);
 		
 endmodule

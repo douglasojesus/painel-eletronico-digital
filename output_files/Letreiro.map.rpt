@@ -1,5 +1,5 @@
 Analysis & Synthesis report for letreiro
-Thu Apr 20 14:05:57 2023
+Fri Apr 28 21:30:14 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -125,12 +125,12 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Apr 20 14:05:57 2023      ;
+; Analysis & Synthesis Status ; Successful - Fri Apr 28 21:30:14 2023      ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; letreiro                                   ;
 ; Top-level Entity Name       ; letreiro                                   ;
 ; Family                      ; MAX II                                     ;
-; Total logic elements        ; 121                                        ;
+; Total logic elements        ; 120                                        ;
 ; Total pins                  ; 15                                         ;
 ; Total virtual pins          ; 0                                          ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                              ;
@@ -254,32 +254,32 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 121   ;
+; Total logic elements                        ; 120   ;
 ;     -- Combinational with no register       ; 30    ;
 ;     -- Register only                        ; 0     ;
-;     -- Combinational with a register        ; 91    ;
+;     -- Combinational with a register        ; 90    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 82    ;
 ;     -- 3 input functions                    ; 9     ;
 ;     -- 2 input functions                    ; 3     ;
-;     -- 1 input functions                    ; 27    ;
+;     -- 1 input functions                    ; 26    ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 121   ;
+;     -- normal mode                          ; 120   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 91    ;
+; Total registers                             ; 90    ;
 ; I/O pins                                    ; 15    ;
 ; Maximum fan-out node                        ; ch0   ;
 ; Maximum fan-out                             ; 70    ;
-; Total fan-out                               ; 555   ;
-; Average fan-out                             ; 4.08  ;
+; Total fan-out                               ; 553   ;
+; Average fan-out                             ; 4.10  ;
 +---------------------------------------------+-------+
 
 
@@ -288,7 +288,7 @@ applicable agreement for further details.
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                         ; Library Name ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; |letreiro                     ; 121 (0)     ; 91           ; 0          ; 15   ; 0            ; 30 (0)       ; 0 (0)             ; 91 (0)           ; 0 (0)           ; 0 (0)      ; |letreiro                                                   ; work         ;
+; |letreiro                     ; 120 (0)     ; 90           ; 0          ; 15   ; 0            ; 30 (0)       ; 0 (0)             ; 90 (0)           ; 0 (0)           ; 0 (0)      ; |letreiro                                                   ; work         ;
 ;    |MatrizDeLEDs:inst1|       ; 32 (8)      ; 3            ; 0          ; 0    ; 0            ; 29 (8)       ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |letreiro|MatrizDeLEDs:inst1                                ; work         ;
 ;       |Contador:inst1|        ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |letreiro|MatrizDeLEDs:inst1|Contador:inst1                 ; work         ;
 ;          |FlipflopT:inst1|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1 ; work         ;
@@ -369,7 +369,7 @@ applicable agreement for further details.
 ;       |FlipflopD:inst7|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|RegistradorL5:instL5|FlipflopD:inst7              ; work         ;
 ;       |FlipflopD:inst8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|RegistradorL5:instL5|FlipflopD:inst8              ; work         ;
 ;       |FlipflopD:inst9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|RegistradorL5:instL5|FlipflopD:inst9              ; work         ;
-;    |divisorComJK:inst|        ; 24 (0)      ; 24           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst                                 ; work         ;
+;    |divisorComJK:inst|        ; 23 (0)      ; 23           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 23 (0)           ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst                                 ; work         ;
 ;       |FFJK:inst10|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst10                     ; work         ;
 ;       |FFJK:inst11|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst11                     ; work         ;
 ;       |FFJK:inst12|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst12                     ; work         ;
@@ -385,7 +385,6 @@ applicable agreement for further details.
 ;       |FFJK:inst21|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst21                     ; work         ;
 ;       |FFJK:inst22|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst22                     ; work         ;
 ;       |FFJK:inst23|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst23                     ; work         ;
-;       |FFJK:inst24|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst24                     ; work         ;
 ;       |FFJK:inst2|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst2                      ; work         ;
 ;       |FFJK:inst3|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst3                      ; work         ;
 ;       |FFJK:inst4|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |letreiro|divisorComJK:inst|FFJK:inst4                      ; work         ;
@@ -428,7 +427,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 91    ;
+; Total registers                              ; 90    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -1286,7 +1285,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Apr 20 14:05:54 2023
+    Info: Processing started: Fri Apr 28 21:30:09 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off letreiro -c letreiro
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file letreiro.v
@@ -1345,14 +1344,14 @@ Info (12128): Elaborating entity "Contador" for hierarchy "MatrizDeLEDs:inst1|Co
 Info (12128): Elaborating entity "FlipflopT" for hierarchy "MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1"
 Info (12128): Elaborating entity "MUXParaColuna" for hierarchy "MatrizDeLEDs:inst1|MUXParaColuna:SaidaC1"
 Warning (12241): 84 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (21057): Implemented 136 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 135 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 121 logic cells
+    Info (21061): Implemented 120 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4605 megabytes
-    Info: Processing ended: Thu Apr 20 14:05:57 2023
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Fri Apr 28 21:30:14 2023
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:02
 
 

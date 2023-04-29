@@ -2,26 +2,26 @@
 CLK => CLK.IN1
 ch0 => ch0.IN6
 ch1 => ch1.IN6
-L1 << MatrizDeLEDs:inst1.port3
-L2 << MatrizDeLEDs:inst1.port4
-L3 << MatrizDeLEDs:inst1.port5
-L4 << MatrizDeLEDs:inst1.port6
-L5 << MatrizDeLEDs:inst1.port7
-C1 << MatrizDeLEDs:inst1.port8
-C2 << MatrizDeLEDs:inst1.port9
-C3 << MatrizDeLEDs:inst1.port10
-C4 << MatrizDeLEDs:inst1.port11
-C5 << MatrizDeLEDs:inst1.port12
-C6 << MatrizDeLEDs:inst1.port13
-C7 << MatrizDeLEDs:inst1.port14
+L1 <= MatrizDeLEDs:inst1.port3
+L2 <= MatrizDeLEDs:inst1.port4
+L3 <= MatrizDeLEDs:inst1.port5
+L4 <= MatrizDeLEDs:inst1.port6
+L5 <= MatrizDeLEDs:inst1.port7
+C1 <= MatrizDeLEDs:inst1.port8
+C2 <= MatrizDeLEDs:inst1.port9
+C3 <= MatrizDeLEDs:inst1.port10
+C4 <= MatrizDeLEDs:inst1.port11
+C5 <= MatrizDeLEDs:inst1.port12
+C6 <= MatrizDeLEDs:inst1.port13
+C7 <= MatrizDeLEDs:inst1.port14
 
 
 |letreiro|divisorComJK:inst
-j => j.IN24
-k => k.IN24
+j => j.IN23
+k => k.IN23
 clk => clk.IN1
 saida1 <= saida1.DB_MAX_OUTPUT_PORT_TYPE
-saida2 <= FFJK:inst24.port3
+saida2 <= FFJK:inst23.port3
 
 
 |letreiro|divisorComJK:inst|FFJK:inst1
@@ -179,13 +179,6 @@ q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |letreiro|divisorComJK:inst|FFJK:inst23
-j => Mux0.IN3
-k => Mux0.IN4
-clk => q~reg0.CLK
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|letreiro|divisorComJK:inst|FFJK:inst24
 j => Mux0.IN3
 k => Mux0.IN4
 clk => q~reg0.CLK

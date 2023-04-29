@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Thu Apr 20 14:05:57 2023
+Analysis & Synthesis Status : Successful - Fri Apr 28 21:30:14 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : letreiro
 Top-level Entity Name : letreiro
 Family : MAX II
-Total logic elements : 121
+Total logic elements : 120
 Total pins : 15
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

@@ -2,19 +2,19 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst24|q'
-Slack : -2.374
-TNS   : -107.687
+Type  : Setup 'divisorComJK:inst|FFJK:inst23|q'
+Slack : -1.877
+TNS   : -101.150
 
 Type  : Setup 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
-Slack : -1.193
-TNS   : -1.193
+Slack : -1.230
+TNS   : -1.230
 
 Type  : Setup 'divisorComJK:inst|FFJK:inst12|q'
-Slack : 0.466
+Slack : 0.459
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst18|q'
+Type  : Setup 'divisorComJK:inst|FFJK:inst14|q'
 Slack : 0.466
 TNS   : 0.000
 
@@ -26,27 +26,19 @@ Type  : Setup 'divisorComJK:inst|FFJK:inst6|q'
 Slack : 0.466
 TNS   : 0.000
 
-Type  : Setup 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
-Slack : 0.467
-TNS   : 0.000
-
 Type  : Setup 'divisorComJK:inst|FFJK:inst10|q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst14|q'
+Type  : Setup 'divisorComJK:inst|FFJK:inst17|q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst16|q'
+Type  : Setup 'divisorComJK:inst|FFJK:inst19|q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst20|q'
-Slack : 0.467
-TNS   : 0.000
-
-Type  : Setup 'divisorComJK:inst|FFJK:inst22|q'
+Type  : Setup 'divisorComJK:inst|FFJK:inst21|q'
 Slack : 0.467
 TNS   : 0.000
 
@@ -58,23 +50,23 @@ Type  : Setup 'divisorComJK:inst|FFJK:inst8|q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst15|q'
-Slack : 0.808
+Type  : Setup 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
+Slack : 0.532
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst21|q'
-Slack : 0.818
+Type  : Setup 'divisorComJK:inst|FFJK:inst18|q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'divisorComJK:inst|FFJK:inst20|q'
+Slack : 0.819
 TNS   : 0.000
 
 Type  : Setup 'divisorComJK:inst|FFJK:inst9|q'
-Slack : 0.818
+Slack : 0.819
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst19|q'
-Slack : 0.825
-TNS   : 0.000
-
-Type  : Setup 'divisorComJK:inst|FFJK:inst2|q'
+Type  : Setup 'divisorComJK:inst|FFJK:inst16|q'
 Slack : 0.825
 TNS   : 0.000
 
@@ -82,67 +74,71 @@ Type  : Setup 'divisorComJK:inst|FFJK:inst7|q'
 Slack : 0.825
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst13|q'
-Slack : 0.833
-TNS   : 0.000
-
-Type  : Setup 'divisorComJK:inst|FFJK:inst4|q'
+Type  : Setup 'divisorComJK:inst|FFJK:inst22|q'
 Slack : 0.836
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst17|q'
-Slack : 1.089
+Type  : Setup 'divisorComJK:inst|FFJK:inst15|q'
+Slack : 0.842
+TNS   : 0.000
+
+Type  : Setup 'divisorComJK:inst|FFJK:inst2|q'
+Slack : 0.853
+TNS   : 0.000
+
+Type  : Setup 'divisorComJK:inst|FFJK:inst4|q'
+Slack : 1.395
 TNS   : 0.000
 
 Type  : Setup 'divisorComJK:inst|FFJK:inst11|q'
-Slack : 1.397
+Slack : 1.511
 TNS   : 0.000
 
-Type  : Setup 'divisorComJK:inst|FFJK:inst23|q'
-Slack : 1.401
+Type  : Setup 'divisorComJK:inst|FFJK:inst13|q'
+Slack : 1.737
 TNS   : 0.000
 
 Type  : Setup 'divisorComJK:inst|FFJK:inst5|q'
-Slack : 2.071
+Slack : 2.004
 TNS   : 0.000
 
 Type  : Setup 'CLK'
-Slack : 2.197
+Slack : 2.869
 TNS   : 0.000
 
 Type  : Hold 'CLK'
-Slack : -2.251
-TNS   : -2.251
+Slack : -2.923
+TNS   : -2.923
 
 Type  : Hold 'divisorComJK:inst|FFJK:inst5|q'
-Slack : -2.125
-TNS   : -4.250
+Slack : -2.108
+TNS   : -4.166
 
-Type  : Hold 'divisorComJK:inst|FFJK:inst23|q'
-Slack : -1.455
-TNS   : -1.455
+Type  : Hold 'divisorComJK:inst|FFJK:inst13|q'
+Slack : -1.791
+TNS   : -1.791
 
 Type  : Hold 'divisorComJK:inst|FFJK:inst11|q'
-Slack : -1.451
-TNS   : -1.451
-
-Type  : Hold 'divisorComJK:inst|FFJK:inst17|q'
-Slack : -1.143
-TNS   : -1.143
+Slack : -1.565
+TNS   : -1.565
 
 Type  : Hold 'divisorComJK:inst|FFJK:inst4|q'
+Slack : -1.449
+TNS   : -1.449
+
+Type  : Hold 'divisorComJK:inst|FFJK:inst2|q'
+Slack : -0.907
+TNS   : -0.907
+
+Type  : Hold 'divisorComJK:inst|FFJK:inst15|q'
+Slack : -0.896
+TNS   : -0.896
+
+Type  : Hold 'divisorComJK:inst|FFJK:inst22|q'
 Slack : -0.890
 TNS   : -0.890
 
-Type  : Hold 'divisorComJK:inst|FFJK:inst13|q'
-Slack : -0.887
-TNS   : -0.887
-
-Type  : Hold 'divisorComJK:inst|FFJK:inst19|q'
-Slack : -0.879
-TNS   : -0.879
-
-Type  : Hold 'divisorComJK:inst|FFJK:inst2|q'
+Type  : Hold 'divisorComJK:inst|FFJK:inst16|q'
 Slack : -0.879
 TNS   : -0.879
 
@@ -150,39 +146,35 @@ Type  : Hold 'divisorComJK:inst|FFJK:inst7|q'
 Slack : -0.879
 TNS   : -0.879
 
-Type  : Hold 'divisorComJK:inst|FFJK:inst21|q'
-Slack : -0.872
-TNS   : -0.872
+Type  : Hold 'divisorComJK:inst|FFJK:inst18|q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'divisorComJK:inst|FFJK:inst20|q'
+Slack : -0.873
+TNS   : -0.873
 
 Type  : Hold 'divisorComJK:inst|FFJK:inst9|q'
-Slack : -0.872
-TNS   : -0.872
-
-Type  : Hold 'divisorComJK:inst|FFJK:inst15|q'
-Slack : -0.862
-TNS   : -0.862
+Slack : -0.873
+TNS   : -0.873
 
 Type  : Hold 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst1|Q'
-Slack : -0.521
-TNS   : -0.521
+Slack : -0.586
+TNS   : -0.586
 
 Type  : Hold 'divisorComJK:inst|FFJK:inst10|q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'divisorComJK:inst|FFJK:inst14|q'
+Type  : Hold 'divisorComJK:inst|FFJK:inst17|q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'divisorComJK:inst|FFJK:inst16|q'
+Type  : Hold 'divisorComJK:inst|FFJK:inst19|q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'divisorComJK:inst|FFJK:inst20|q'
-Slack : -0.521
-TNS   : -0.521
-
-Type  : Hold 'divisorComJK:inst|FFJK:inst22|q'
+Type  : Hold 'divisorComJK:inst|FFJK:inst21|q'
 Slack : -0.521
 TNS   : -0.521
 
@@ -194,11 +186,7 @@ Type  : Hold 'divisorComJK:inst|FFJK:inst8|q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'divisorComJK:inst|FFJK:inst12|q'
-Slack : -0.520
-TNS   : -0.520
-
-Type  : Hold 'divisorComJK:inst|FFJK:inst18|q'
+Type  : Hold 'divisorComJK:inst|FFJK:inst14|q'
 Slack : -0.520
 TNS   : -0.520
 
@@ -210,12 +198,16 @@ Type  : Hold 'divisorComJK:inst|FFJK:inst6|q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
-Slack : 1.639
+Type  : Hold 'divisorComJK:inst|FFJK:inst12|q'
+Slack : -0.513
+TNS   : -0.513
+
+Type  : Hold 'divisorComJK:inst|FFJK:inst23|q'
+Slack : 1.663
 TNS   : 0.000
 
-Type  : Hold 'divisorComJK:inst|FFJK:inst24|q'
-Slack : 1.645
+Type  : Hold 'MatrizDeLEDs:inst1|Contador:inst1|FlipflopT:inst2|Q'
+Slack : 1.676
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'CLK'
@@ -287,10 +279,6 @@ Slack : 0.234
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'divisorComJK:inst|FFJK:inst23|q'
-Slack : 0.234
-TNS   : 0.000
-
-Type  : Minimum Pulse Width 'divisorComJK:inst|FFJK:inst24|q'
 Slack : 0.234
 TNS   : 0.000
 

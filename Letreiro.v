@@ -26,9 +26,8 @@ module letreiro(CLK, ch0, ch1, L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7);
 	/*Para haver frequências diferentes entre o acionamento da matriz e o deslocamento dos shift-registers, 
 	/é necessário dois relógios diferentes. O que será responsável pelo deslocamento precisa ter uma frequência menor.*/
 	//CLK3 -> 5
-	//CLK2 -> 24
+	//CLK2 -> 23
 	divisorComJK inst(1, 1, CLK, CLK3, CLK2);
-	//divisor inst(CLK, CLK3, CLK2);
 
 	//Instancia única dos módulos Registradores. São diferentes pois cada um tem uma sequência de bits pré-definida.
 	RegistradorL1 instL1(ch0, ch1, CLK2, C1L1, C2L1, C3L1, C4L1, C5L1, C6L1, C7L1);
