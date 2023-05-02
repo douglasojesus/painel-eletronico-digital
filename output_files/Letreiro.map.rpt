@@ -1,5 +1,5 @@
 Analysis & Synthesis report for letreiro
-Fri Apr 28 21:30:14 2023
+Mon May 01 20:48:47 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -125,7 +125,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Apr 28 21:30:14 2023      ;
+; Analysis & Synthesis Status ; Successful - Mon May 01 20:48:47 2023      ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; letreiro                                   ;
 ; Top-level Entity Name       ; letreiro                                   ;
@@ -1285,7 +1285,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Apr 28 21:30:09 2023
+    Info: Processing started: Mon May 01 20:48:44 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off letreiro -c letreiro
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file letreiro.v
@@ -1350,8 +1350,8 @@ Info (21057): Implemented 135 device resources after synthesis - the final resou
     Info (21061): Implemented 120 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4605 megabytes
-    Info: Processing ended: Fri Apr 28 21:30:14 2023
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Mon May 01 20:48:47 2023
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

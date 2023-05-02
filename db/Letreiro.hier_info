@@ -2,18 +2,18 @@
 CLK => CLK.IN1
 ch0 => ch0.IN6
 ch1 => ch1.IN6
-L1 <= MatrizDeLEDs:inst1.port3
-L2 <= MatrizDeLEDs:inst1.port4
-L3 <= MatrizDeLEDs:inst1.port5
-L4 <= MatrizDeLEDs:inst1.port6
-L5 <= MatrizDeLEDs:inst1.port7
-C1 <= MatrizDeLEDs:inst1.port8
-C2 <= MatrizDeLEDs:inst1.port9
-C3 <= MatrizDeLEDs:inst1.port10
-C4 <= MatrizDeLEDs:inst1.port11
-C5 <= MatrizDeLEDs:inst1.port12
-C6 <= MatrizDeLEDs:inst1.port13
-C7 <= MatrizDeLEDs:inst1.port14
+L1 << MatrizDeLEDs:inst1.port3
+L2 << MatrizDeLEDs:inst1.port4
+L3 << MatrizDeLEDs:inst1.port5
+L4 << MatrizDeLEDs:inst1.port6
+L5 << MatrizDeLEDs:inst1.port7
+C1 << MatrizDeLEDs:inst1.port8
+C2 << MatrizDeLEDs:inst1.port9
+C3 << MatrizDeLEDs:inst1.port10
+C4 << MatrizDeLEDs:inst1.port11
+C5 << MatrizDeLEDs:inst1.port12
+C6 << MatrizDeLEDs:inst1.port13
+C7 << MatrizDeLEDs:inst1.port14
 
 
 |letreiro|divisorComJK:inst

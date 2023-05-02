@@ -89,3 +89,4 @@ set_location_assignment PIN_56 -to rele
 set_global_assignment -name VERILOG_FILE divisor.v
 set_global_assignment -name VERILOG_FILE FFJK.v
 set_global_assignment -name VERILOG_FILE divisorComJK.v
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"

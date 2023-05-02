@@ -1,5 +1,5 @@
 Flow report for letreiro
-Fri Apr 28 21:30:31 2023
+Mon May 01 20:49:02 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +---------------------------+--------------------------------------------+
-; Flow Status               ; Successful - Fri Apr 28 21:30:31 2023      ;
+; Flow Status               ; Successful - Mon May 01 20:49:02 2023      ;
 ; Quartus II 64-Bit Version ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name             ; letreiro                                   ;
 ; Top-level Entity Name     ; letreiro                                   ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/28/2023 21:30:10 ;
+; Start date & time ; 05/01/2023 20:48:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; letreiro            ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ applicable agreement for further details.
 +---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                       ; Value                           ; Default Value ; Entity Name ; Section Id                        ;
 +---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                 ; 123598315015815.168272821002308 ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                 ; 123598315015815.168298492506076 ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_symbol           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -90,12 +90,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4605 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 5253 MB             ; 00:00:02                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4555 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4605 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:04     ; 2.0                     ; 5253 MB             ; 00:00:02                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4555 MB             ; 00:00:00                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4602 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4535 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
