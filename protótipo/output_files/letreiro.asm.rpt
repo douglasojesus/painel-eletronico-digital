@@ -1,5 +1,5 @@
 Assembler report for letreiro
-Mon May 01 20:48:56 2023
+Tue May 02 21:41:40 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/output_files/letreiro.pof
+  5. Assembler Device Options: C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/protótipo/output_files/letreiro.pof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon May 01 20:48:56 2023 ;
+; Assembler Status      ; Successful - Tue May 02 21:41:40 2023 ;
 ; Revision Name         ; letreiro                              ;
 ; Top-level Entity Name ; letreiro                              ;
 ; Family                ; MAX II                                ;
@@ -75,24 +75,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+-----------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                   ;
-+-----------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                   ;
-+-----------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/output_files/letreiro.pof ;
-+-----------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/protótipo/output_files/letreiro.pof ;
++---------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/output_files/letreiro.pof ;
-+----------------+--------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                              ;
-+----------------+--------------------------------------------------------------------------------------------------------------------------------------+
-; Device         ; EPM240T100C5                                                                                                                         ;
-; JTAG usercode  ; 0x0017E600                                                                                                                           ;
-; Checksum       ; 0x0017EB68                                                                                                                           ;
-+----------------+--------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/douge/Desktop/UEFS/SEMESTRE_3/MI_Circuitos_Digitais/Problema_2/painel-eletronico-digital/protótipo/output_files/letreiro.pof ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                        ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Device         ; EPM240T100C5                                                                                                                                   ;
+; JTAG usercode  ; 0x0017E600                                                                                                                                     ;
+; Checksum       ; 0x0017EB68                                                                                                                                     ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -101,13 +101,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon May 01 20:48:55 2023
+    Info: Processing started: Tue May 02 21:41:40 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off letreiro -c letreiro
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4563 megabytes
-    Info: Processing ended: Mon May 01 20:48:56 2023
+    Info: Processing ended: Tue May 02 21:41:41 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
