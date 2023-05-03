@@ -43,7 +43,9 @@ A palavra "UEFS", por sua vez, para ser representada em bits, foi utilizado a l�
     \label{fig:uefs_em_bits}
 \end{figure}
 
-Cada flip-flop do tipo D recebe as seguintes entradas: ch0, ch1, para\_exibicao, dir\_esq, esq\_dir e CLK. Quando "para\_exibicao" for acionado (ch0 e ch1 em nível lógico baixo), os LEDs irão ser desligados e o registrador será setado com os valores iniciais pré-definidos. Quando "dir\_esq" for acionado (ch0 e ch1 em nível lógico alto e baixo, respectivamente), o flipflop atual vai receber a saída do flipflop anterior, ou seja, a exibição será feita da direita para a esquerda, pois será nessa orientação que os bits serão deslocados. Quando "esq\_dir" for acionado (ch0 e ch1 em nível lógico baixo e alto, respectivamente), o flipflop atual vai receber a saída do flipflop posterior, ou seja, a exibição será feita da esquerda para a direita, pois será nessa orientação que os bits serão deslocados. Por fim, quando ambas as entradas ch0 e ch1 forem nível lógico alto, o clock será inibido, ou seja, não haverá deslocamento e o painel será "pausado". O componente responsável por direcionar as entradas de seleção ch0 e ch1 para o flip-flop é o multiplexador. Por fim, os registradores enviam 7 saídas para a main, entituladas colunas, que são enviadas para a matriz de LEDs, que as selecionam através de um contador e um multiplexador.
+Cada flip-flop do tipo D recebe as seguintes entradas: ch0, ch1, para\_exibicao, dir\_esq, esq\_dir e CLK. Quando "para\_exibicao" for acionado (ch0 e ch1 em nível lógico baixo), os LEDs irão ser desligados e o registrador será setado com os valores iniciais pré-definidos. Quando "dir\_esq" for acionado (ch0 e ch1 em nível lógico alto e baixo, respectivamente), o flipflop atual vai receber a saída do flipflop anterior, ou seja, a exibição será feita da direita para a esquerda, pois será nessa orientação que os bits serão deslocados. Quando "esq\_dir" for acionado (ch0 e ch1 em nível lógico baixo e alto, respectivamente), o flipflop atual vai receber a saída do flipflop posterior, ou seja, a exibição será feita da esquerda para a direita, pois será nessa orientação que os bits serão deslocados. Por fim, quando ambas as entradas ch0 e ch1 forem nível lógico alto, o clock será inibido, ou seja, não haverá deslocamento e o painel será "pausado". 
+
+O componente responsável por direcionar as entradas de seleção ch0 e ch1 para o flip-flop é o multiplexador. Por fim, os registradores enviam 7 saídas para a main, entituladas colunas, que são enviadas para a matriz de LEDs, que as selecionam através de um contador e um multiplexador.
 
 Por sua vez, o módulo de matriz de LEDs é controlado por um contador e selecionador de linhas e colunas. O módulo recebe 2 sinais de entrada: ch0 e ch1, que são utilizados para habilitar ou desabilitar a matriz de LEDs. Há também um sinal de entrada CLK para sincronizar a operação do contador. Além disso, existem 35 sinais de entrada (C1L1, C1L2, ..., C7L5) que controlam os LEDs individuais e 12 sinais de saída (L1, L2, L3, L4, L5, C1, C2, C3, C4, C5, C6, C7) que são conectados aos pinos do componente físico.
 
@@ -77,6 +79,33 @@ Quando o código é ainda compilado no Quartus, uma série de informações acer
 
 Para realizar os testes físicos na placa, é recomendável realizar algumas simulações virtuais inicialmente e testar as saídas, na tentativa de perceber os problemas antes de estarem conectadas na placa. Caso a simulação esteja correta, o ideal é que a aplicação física tenha um resultado adequado. 
 
+O primeiro teste realizado foi o de deslocamento, utilizando a ferramenta de formas de onda do Quartus para análise do deslocamento dos bits. Como a Figura \ref{fig:testedesloc1} demonstra, o teste teve os resultados esperados. Como o registrador R1 tem 16 bits e apenas 7 serão enviados para a matriz, no momento do teste, apenas os 7 primeiros bits foram representados como saídas. Além disso, o registrador universal permite que a saída do último flip-flop do registrador seja a entrada do primeiro, por isso o deslocamento, quando acontece da direita para a esquerda, recebe valores diferentes de 0 na entrada. 
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=0.55\textwidth]{imagens/teste_de_desloc1.png}
+  \caption{Teste de deslocamento da direita para a esquerda}
+  \label{fig:testedesloc1}
+\end{figure}
+
+O segundo teste (Figura \ref{fig:testedesloc2}) apresenta pausa do deslocamento quando ambas as entradas ch0 e ch1 estão comutadas. Ou seja, embora o clock continue registrando suas bordas de subida, os valores não são deslocados.
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=0.30\textwidth]{imagens/teste_de_desloc2.png}
+  \caption{Teste de deslocamento com o clock inibido no código}
+  \label{fig:testedesloc2}
+\end{figure}
+
+Por fim, o terceiro teste (Figura \ref{fig:testedesloc3}) apresenta deslocamento da esquerda para a direita, quando ch0 é "0" e ch1 é "1". É interessante reparar que os bits que deixaram de ser visíveis no teste da Figura \ref{fig:testedesloc1} voltam como entrada pelo lado esquerdo na saída do registrador.
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=0.40\textwidth]{imagens/teste_de_desloc3.png}
+  \caption{Teste de deslocamento da esquerda para a direita}
+  \label{fig:testedesloc3}
+\end{figure}
+
 No momento de testes na placa, foi percebido uma anômalidade, onde os bits eram deslocados, mas não eram exibidos na matriz de maneira que desse para efetuar a leitura. Com uma análise, o problema foi visto na frequência que os bits eram exibidos. Em um divisor de frequência incial, os bits não eram exibidos adequadamente. Para verificar se o problema era realmente no divisor de frequência, uma saída foi forçada para o relé do kit de desenvolvimento LEDS CPLD, que foi conectada ao osciloscópio. Com isso, foi analisado que o clock do sistema não estava sendo dividido. Um erro foi diagnosticado no código e corrigido. Após isso, os testes foram validados e executados de maneira esperada, como demonstrada a seguir:
 
 \begin{equation} \label{eqCLK2}
@@ -85,7 +114,7 @@ No momento de testes na placa, foi percebido uma anômalidade, onde os bits eram
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.6\textwidth]{imagens/osci01.jpg}
+    \includegraphics[width=0.5\textwidth]{imagens/osci01.jpg}
     \caption{Teste da divisão de frequência em 5 Flip-Flops feito no osciloscópio.}
     \label{fig:osci5}
 \end{figure}
@@ -98,7 +127,7 @@ Dividindo o clock em 5 Flip-Flops, como demonstrado na equação \ref{eqCLK2}, p
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{imagens/osci02.jpg}
+    \includegraphics[width=0.5\textwidth]{imagens/osci02.jpg}
     \caption{Teste da divisão de frequência em 23 Flip-Flops feito no osciloscópio.}
     \label{fig:osci23}
 \end{figure}

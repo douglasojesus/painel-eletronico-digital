@@ -3,9 +3,30 @@
 %Divisor de frequencia: https://www.maxwell.vrac.puc-rio.br/15236/15236_4.PDF
 %Dvisor de frequencia: https://www.newtoncbraga.com.br/index.php/artigos/54-dicas/4137-art566.html
 \section{Flip-flop}
-Flip-flops são circuitos eletrônicos que possuem a capacidade de armazenar um estado binário (0 ou 1) e mudá-lo em resposta a um sinal de clock \cite{floyd}. Essa característica faz dos flip-flops componentes essenciais em circuitos digitais que requerem armazenamento temporário de informações, como contadores, registradores, sequenciadores, entre outros.
+Flip-flops são circuitos eletrônicos que possuem a capacidade de armazenar um estado binário (0 ou 1) e mudá-lo em resposta a um sinal de clock \cite{floyd}. Essa característica faz dos flip-flops componentes essenciais em circuitos digitais que requerem armazenamento temporário de informações, como contadores, registradores, sequenciadores, entre outros. Os flip-flops são formados com latches (Figura \ref{fig:latch}), que possuem 2 portas lógicas (NOR ou NAND), com conexão das saídas nas entradas da outra porta lógica.
 
-Existem vários tipos de flip-flops, sendo os mais comuns o D, T e JK. O flip-flop D, ou Data, é o mais simples deles e possui apenas uma entrada, chamada de D, que é utilizada para armazenar um estado binário. Quando o sinal de clock é acionado, o estado armazenado é transferido para a saída do flip-flop. O flip-flop T, ou Toggle, é similar ao D, porém, quando a entrada T é acionada, o estado armazenado é invertido (0 vira 1 e vice-versa). Por fim, o flip-flop JK é uma variação do flip-flop T, com duas entradas J e K que permitem definir como será a próxima transição de estado, possibilitando a criação de contadores e sequenciadores mais complexos.
+Existem vários tipos de flip-flops, sendo os mais comuns o D, T e JK. O flip-flop D (Figura \ref{fig:ffTipoD}), ou Data, é o mais simples deles e possui apenas uma entrada, chamada de D, que é utilizada para armazenar um estado binário. Quando o sinal de clock é acionado, o estado armazenado é transferido para a saída do flip-flop. O flip-flop T, ou Toggle, é similar ao D, porém, quando a entrada T é acionada, o estado armazenado é invertido (0 vira 1 e vice-versa). Por fim, o flip-flop JK (Figura \ref{fig:ffTipoJK}) é uma variação do flip-flop T, com duas entradas J e K que permitem definir como será a próxima transição de estado, possibilitando a criação de contadores e sequenciadores mais complexos.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{imagens/SR-NOR-latch.png}
+    \caption{Latch SR (set-reset) com portas NOR}
+    \label{fig:latch}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/Dflipflop-Master-Slave-edge-triggered-2-1024x320.png}
+    \caption{Flip-flop tipo D mestre-escravo}
+    \label{fig:ffTipoD}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/sodapdf-converted.png}
+    \caption{Flip-flop tipo JK mestre-escravo}
+    \label{fig:ffTipoJK}
+\end{figure}
 
 O flip-flop JK possui quatro possíveis configurações de entrada: J=0 e K=0, J=0 e K=1, J=1 e K=0, e J=1 e K=1. Quando J e K são ambos 0, o flip-flop permanece no mesmo estado; quando J=0 e K=1, o estado do flip-flop é zerado; quando J=1 e K=0, o estado é invertido; e quando J e K são ambos 1, ocorre uma "alternância", ou seja, o estado atual é invertido para o estado oposto.
 
